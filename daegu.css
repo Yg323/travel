@@ -2,6 +2,37 @@
     margin: 0px;
     padding: 0px;
   }
+  @font-face { font-family: '국립박물관문화재단클래식B';
+                 src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') 
+                 format('woff'); 
+                 font-weight: normal; 
+                 font-style: normal; }
+                 @font-face { font-family: 'NanumBarunGothic'; 
+                    font-style: normal; 
+                    font-weight: 400; 
+                    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); 
+                    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') 
+                    format('embedded-opentype'), 
+                    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') 
+                    format('woff'), 
+                    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') 
+                    format('truetype'); } 
+                    @font-face { font-family: 'NanumBarunGothic'; 
+                        font-style: normal; font-weight: 700; 
+                        src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); 
+                        src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') 
+                        format('embedded-opentype'), 
+                        url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') 
+                        format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') 
+                        format('truetype') } 
+                        @font-face { font-family: 'NanumBarunGothic'; font-style: normal; 
+                            font-weight: 300; 
+                            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); 
+                            src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') 
+                            format('embedded-opentype'), 
+                            url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') 
+                            format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') 
+                            format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
   .container{
     width: 1000px;
     margin: 0 auto;
@@ -14,6 +45,7 @@
     display: table-cell;
     vertical-align: middle;
     font-size: 50px;
+    font-family: '국립박물관문화재단클래식B';
   }
 .top{
     margin-top: 20px;
@@ -29,6 +61,7 @@
     width: 1000px;
     height: 500px;
     position: relative;
+    font-family: 'NanumBarunGothic';
   }
   .middle-left{
     outline: 1px solid #9F9F9F;
@@ -55,15 +88,19 @@
     outline: 1px solid #9F9F9F;
     margin-top: 10px;
     width: 380px;
-    height: 100px;
+    height: 50px;
     background-color: #FFE400;
   }
   .middle-right-3{
     outline: 1px solid #9F9F9F;
     margin-top: 10px;
     width: 380px;
-    height: 280px;
+    height: 330px;
     background-color: #99E000;
+  }
+  form {
+    margin :0px;
+    padding :0px;
   }
   .bottom{
     margin-top: 20px;
