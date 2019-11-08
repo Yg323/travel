@@ -1,0 +1,108 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+  }
+.container div{
+    text-align: center;
+    display: table;
+  }
+.container div span{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+  }
+.top{
+    margin-top: 20px;
+    outline: 1px solid #9F9F9F;
+    width: 1000px;
+    height: 80px;
+    display: table;
+    background-color: aquamarine;
+    text-align: center;
+  }
+.middle{
+    margin-top: 20px;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+  }
+  .middle-left{
+    outline: 1px solid #9F9F9F;
+    position: absolute;
+    top: 0px;
+    width: 600px;
+    height: 500px;
+    background-color: #00D8FF;
+  }
+  .path{
+      width:500px;
+      height:300px;
+      border:2px dashed gray;
+  }
+  .path{
+      position:relative;
+      top:30px;
+      left:45px;
+  }
+  .box1{
+      width:80px;
+      height:30px;
+      background:tomato;
+      font-size: 15px;
+      margin:30px;
+      float:left;
+  }
+  .absolute{
+      position:absolute;
+      top:100px;
+      left:370px;
+  }
+  .box2{
+    width:80px;
+    height:30px;
+    background:tomato;
+    font-size: 15px;
+    margin:30px;
+    float:right;
+  }
+  .box2{
+      position: relative;
+      top:120px;
+      right:80px;
+  }
+.middle-right{
+    position: absolute;
+    top: 0px;
+    left: 620px;
+    width: 380px;
+    height: 500px;
+  }
+  .middle-right-1{
+    outline: 1px solid #9F9F9F;
+    width: 380px;
+    height: 100px;
+    background-color: #FF00DD;
+  }
+  .middle-right-2{
+    outline: 1px solid #9F9F9F;
+    margin-top: 10px;
+    width: 380px;
+    height: 100px;
+    background-color: #FFE400;
+  }
+  .middle-right-3{
+    outline: 1px solid #9F9F9F;
+    margin-top: 10px;
+    width: 380px;
+    height: 280px;
+    background-color: #99E000;
+  }
+.bottom{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: 1px solid #9F9F9F;
+    width: 1000px;
+    height: 100px;
+    background-color: #5D5D5D;
+    color: #fff;
+  }
