@@ -1,8 +1,4 @@
-*{
-    margin: 0px;
-    padding: 0px;
-  }
-  @font-face { font-family: '국립박물관문화재단클래식B';
+@font-face { font-family: '국립박물관문화재단클래식B';
                  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') 
                  format('woff'); 
                  font-weight: normal; 
@@ -33,81 +29,47 @@
                             url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') 
                             format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') 
                             format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
-  .container{
-    width: 1000px;
-    margin: 0 auto;
+
+#jb-container {
+  width: 1024px;
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px solid #bcbcbc;
+}
+#jb-header {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #bcbcbc;
+}
+#jb-content {
+  width: 465px;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: left;
+  border: 1px solid #bcbcbc;
+}
+#jb-sidebar {
+  width: 465px;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: right;
+  border: 1px solid #bcbcbc;
+}
+#jb-footer {
+  clear: both;
+  padding: 20px;
+  border: 1px solid #bcbcbc;
+}
+@media ( max-width: 480px ) {
+  #jb-container {
+    width: auto;
   }
-  .container div{
-    text-align: center;
-    display: table;
+  #jb-content {
+    float: none;
+    width: auto;
   }
-  .container div span{
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 50px;
-    font-family: '국립박물관문화재단클래식B';
+  #jb-sidebar {
+    float: none;
+    width: auto;
   }
-.top{
-    margin-top: 20px;
-    outline: 1px solid #9F9F9F;
-    width: 1000px;
-    height: 80px;
-    display: table;
-    background-color: aquamarine;
-    text-align: center;
-  }
-  .middle{
-    margin-top: 20px;
-    width: 1000px;
-    height: 500px;
-    position: relative;
-    font-family: 'NanumBarunGothic';
-  }
-  .middle-left{
-    outline: 1px solid #9F9F9F;
-    position: absolute;
-    top: 0px;
-    width: 600px;
-    height: 500px;
-    background-color: #00D8FF;
-  }
-  .middle-right{
-    position: absolute;
-    top: 0px;
-    left: 620px;
-    width: 380px;
-    height: 500px;
-  }
-  .middle-right-1{
-    outline: 1px solid #9F9F9F;
-    width: 380px;
-    height: 100px;
-    background-color: #FF00DD;
-  }
-  .middle-right-2{
-    outline: 1px solid #9F9F9F;
-    margin-top: 10px;
-    width: 380px;
-    height: 50px;
-    background-color: #FFE400;
-  }
-  .middle-right-3{
-    outline: 1px solid #9F9F9F;
-    margin-top: 10px;
-    width: 380px;
-    height: 330px;
-    background-color: #99E000;
-  }
-  form {
-    margin :0px;
-    padding :0px;
-  }
-  .bottom{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    outline: 1px solid #9F9F9F;
-    width: 1000px;
-    height: 100px;
-    background-color: #5D5D5D;
-    color: #fff;
-  }
+}
