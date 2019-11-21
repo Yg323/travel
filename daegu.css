@@ -30,45 +30,55 @@
                             format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') 
                             format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
 
-#jb-container {
+#container {
   width: 1024px;
   margin: 10px auto;
   padding: 20px;
   border: 1px solid #bcbcbc;
 }
-#jb-header {
+#header {
+  /* 레이어 */
   padding: 20px;
   margin-bottom: 20px;
   border: 1px solid #bcbcbc;
+  /* 폰트 */
+  color: rgba(29, 29, 29, 0.781);
+  font-family: '국립박물관문화재단클래식B';
+  text-align: center;
+  font-size: 50px;
 }
-#jb-content {
+#content {
   width: 465px;
   padding: 20px;
   margin-bottom: 20px;
   float: left;
+  top: 0px; left: 0px;
+  position: fixed;
+  overflow: scroll;
   border: 1px solid #bcbcbc;
 }
-#jb-sidebar {
+#sidebar {
   width: 465px;
   padding: 20px;
   margin-bottom: 20px;
   float: right;
   border: 1px solid #bcbcbc;
 }
-#jb-footer {
+#footer {
   clear: both;
   padding: 20px;
   border: 1px solid #bcbcbc;
 }
+/* 모바일 */
 @media ( max-width: 480px ) {
-  #jb-container {
+  #container {
     width: auto;
   }
-  #jb-content {
+  #content {
     float: none;
     width: auto;
   }
-  #jb-sidebar {
+  #sidebar {
     float: none;
     width: auto;
   }
