@@ -4,25 +4,75 @@
     <title>HONEE TRIP</title>
     <link rel="shortcut icon" type="image/x-icon" href="honey.png">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet"  href="./bootstrap.min.css">
 </head>
 <body>
     <!--지도 이미지, 로고, 로그인창, 회원가입창 -->
     <div class="middle">
-            <div class="middle-left">
-              left
+        <div class="middle-left">
+            left
+        </div>
+        <div class="middle-mid">
+            mid
+        </div>
+        <div class="middle-right">
+            <div class="login"><!--로그인창-->
+                <ul>
+                    <li class="form-inline">
+                        <labal>아이디</labal>:<input type="text" class="form-control">
+                    </li>
+                    <li class="form-inline">
+                        <labal>패스워드</labal>:<input type="password" class="form-control">
+                    </li>
+
+                </ul>
+                      
             </div>
-            <div class="middle-mid">
-                mid
+            <div class="signup"><!--회원가입창-->
+                <ul>
+                    <li class="form-inline">
+                        <labal>이름</labal>:<input type="text" class="form-control">
+                    </li>
+                    <li class="form-inline">
+                        <labal>이메일</labal>:<input type="text" class="form-control">
+                    </li>
+                    <li class="form-inline">
+                        <labal>아이디</labal>:<input type="text" class="form-control">
+                    </li>
+                    <li class="form-inline">
+                        <labal>패스워드</labal>:<input type="password" class="form-control">
+                    </li>
+                     <li class="form-inline">
+                        <labal>생년월일</labal>:
+                        <select name="" id="" class="form-control">
+                            <option value="">년도</option>
+                            <option value="">2018</option>
+                            <option value="">2019</option>
+                        </select>
+                        -
+                        <select name="" id="" class="form-control">
+                            <option value="">월</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                        </select>
+                        -
+                        <select name="" id="" class="form-control">
+                            <option value="">일</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                        </select>
+                    </li>
+                    <li class="form-inline">
+                        <input type="checkbox" id="agree" />
+                        <label for="agree">
+                            약관에 동의하시겠습니까?
+                        </label>
+                    </li>
+
+                </ul>
             </div>
-            <div class="middle-right">
-                <!--로그인창-->
-                <form>
-                    <input type="text" name="id" value="ID">
-                    <input type="password" name="password" value="password">
-                
-                </form>
-            </div>
+        </div>
             
-        </div>   
+    </div>   
 </body>
 </html>
