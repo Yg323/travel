@@ -59,52 +59,24 @@ body{
   border: 1px solid #bcbcbc;
   position: fixed;
 }
-#sidebar-t {
-  display: inline;
+#sidebar {
+  display: block;
   float: right;
   width: 44%;
+  top: 18%; right: 1%;
   padding: 2%;
   margin-bottom: 20px;
-  
+  margin: 0 auto;
   border: 1px solid #bcbcbc;
 }
-#sidebar-f {
-  display: inline;
-  float: right;
-  width: 44%;
-  padding: 2%;
-  margin-bottom: 20px;
-  
-  border: 1px solid #bcbcbc;
-}
-#sidebar-c {
-  display: inline;
-  float: right;
-  width: 44%;
-  padding: 2%;
-  margin-bottom: 20px;
-  
-  border: 1px solid #bcbcbc;
-}
-#sidebar-m {
-  display: inline;
-  float: right;
-  width: 44%;
-  padding: 2%;
-  margin-bottom: 20px;
-  
-  border: 1px solid #bcbcbc;
-}
-
 #sidebar1{
-  border: 1px solid #bcbcbc;
-  width: 44%;
-  
+  width: 100%; 
+}
+a#sidebar1{
+  margin: 50%;
 }
 #sidebar2{
-  border: 1px solid #bcbcbc;
   width: 44%;
-  
 }
 #footer {
   clear: both;

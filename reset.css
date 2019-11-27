@@ -42,3 +42,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #dba522;
+}
+::-webkit-scrollbar-thumb{
+    background: #eee;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: gray;
+}
