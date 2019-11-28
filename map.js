@@ -1,5 +1,3 @@
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=92f283435fdd4aa3809a7a83baab7bed&libraries=services"></script>
-<script>
 // 마커를 담을 배열입니다
 var markers = [];
 
@@ -216,4 +214,3 @@ function removeAllChildNods(el) {
         el.removeChild (el.lastChild);
     }
 }
-</script>
