@@ -33,45 +33,91 @@
              url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') 
              format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') 
              format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
-.middle{
-  outline: 2px solid red;
-  margin-top: 1.5%;
-  margin-left: 1.5%;
-  width: 97%;
-  height: 920px;
+body{
+  padding:0px;
+  margin:0px 0px 0 0;
+  background-color: #dba522;
+}
+.ht-container{
+  
   position: relative;
-  /* margin: 0 auto; */
+  /*margin: 0 auto;*/ 
   text-align: center;
   display: table;
-  background-color: black;
+  background-color: #dba522;
   font-family: 'NanumBarunGothic';
+} 
+#header{
+  position: relative;
+  
+  max-width: 1200px;
+ 
+  width:100%;
+  height: 33px;
+  background: #000;
 }
-.middle-left{
+#ht-sidebar-left{
   outline: 2px solid rgb(255, 255, 255);
-  position: absolute;
-  top: 1%;
-  left: 2.5%;
-  width: 8%;
-  height: 99%; /*auto로 변경예정*/
-  background-color: rgb(0, 0, 0);
+  float: left;
+  width: 200px;
+  margin:10px 10px 10px 10px;
+   /*auto로 변경예정*/
 }
-.middle-mid{
+#ht-sidebar-left #ht-sidebar-left1{
+  float: left;
+  width:100px;
+  position: relative;
+  
+  
+}
+
+#ht-content{
   outline: 2px solid rgb(255, 255, 255);
-  position: absolute;
-  top: 1%;
-  left: 13%;
-  width: 51%;
-  height: 99%; /*auto로 변경예정*/
-  background-color: rgb(0, 0, 0);
+  position: relative;
+  width: 500px;
+  margin: 10px 0px 10px 10px;
+  float: left;
   }
-.middle-right{
+#ht-sidebar-right{
   outline: 2px solid rgb(255, 255, 255);
-  position: absolute;
-  top: 1%;
-  left: 67%;
-  width: 30%;
-  height: 99%; /*auto로 변경예정*/
-  color:white;
-  background-color: rgb(0, 0, 0);
+  position: relative;
+  margin: 10px 10px 20px 20px;
+  width: 300px;
+  float: right;
+  color:black;
 }
+#ht-sidebar-right #right_contents{
+  margin:25px 50px 0 50px;
+  padding:0;
+  font-size: 10px;
+}
+#right_contents .login{
+
+}
+#right_contents .login_button{
+  
+}
+#right_contents .signup{
+  position: relative;
+  top:10px;
+}
+#right_contents .signup table{
+  table-layout: fixed;
+}
+table{
+  width: auto;
+  border:0;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+th{
+
+}
+
+/*#login{
+  float:left;
+}
+#login_button{
+  float: right;
+}*/
   
