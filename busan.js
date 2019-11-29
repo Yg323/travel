@@ -35,4 +35,11 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 			var message = '지도를 드래그 하고 있습니다. ' + 
 							'지도의 중심 좌표는 ' + map.getCenter().toString() +' 입니다.';
 			console.log(message);
-		});
+        });
+        
+// 리스트 정렬!
+function setSelectList(){
+    var selected = document.getElementById("busan_travel");
+    var word = selected.getElementById("textTime");
+    word.value = selected[selected.selectIndex].text;
+}
