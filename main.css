@@ -125,9 +125,24 @@ body{
 .right-signup h1{
   justify-content: center;
   position: relative;
-  height: 20%;
+  height: 10%;
   top: 5%;
+  left: 35%;
   font-size: large;
   font-weight: bold;
+}
+.signup{
+  justify-content: center;
+  position: relative;
+  width:70%;
+  top: 20%;
+}
+caption{caption-side: bottom;}
+table{
+  border-collapse: collapse;
+  
+}
+tbody{
+  height: 50%;
 }
   
