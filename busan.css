@@ -40,6 +40,9 @@ body{
     margin-bottom: 1%;
     border: 1px solid red;
 }
+.top img{
+    height: 8.4%;
+}
 .left{
     justify-content: center;
     display: inline-flex;
@@ -70,6 +73,9 @@ body{
     height: 4.35%;
     border: 1px solid red;
 }
+.right2 select{
+    height: 4.35%;
+}
 .right3{
     justify-content: center;
     display: flex;
@@ -85,8 +91,7 @@ body{
 }
 .left-map{
     position: fixed;
-    top: 12%; left: 0.5%;
-    width: 48%; height:60%;/*원래 height 20.3%*/
-    /* width: 650px; height: 500px; */
+    top: 22%; left: 0.5%;
+    width: 48%; height:70%;
     border: 1px solid blue;
 }
