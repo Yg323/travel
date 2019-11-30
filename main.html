@@ -30,8 +30,34 @@
             <h1>회원가입</h1>
             <div class="signup">
                 <table border="1">
+                    <caption>
+                        <input type="submit" name="signup" value="가입" id="signup">
+                        <input type="reset">
+                    </caption>
                     <tbody>
-
+                        <tr>
+                            <th scope="row" id="nameTitle">이름</th>
+                            <td>
+                                <span id="nameContents">
+                                    <input type="text" name="name" id="name" maxlength="10" placeholder="10자이내">
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">아이디</th>
+                            <td>
+                                <input id="member_id" name="member_id" placeholder="(영문소문자/숫자, 4~16자)" fw-filter="isFill&amp;isFill&amp;isMin[4]&amp;isMax[16]&amp;isIdentity"
+                                fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="" value="" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">비밀번호</th>
+                            <td>
+                                <input id="passwd" name="passwd" placeholder="(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" 
+                                fw-label="비밀번호" fw-msg="" autocomplete="off" maxlength="16" 0="disabled" value="" type="password">
+                            </td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
