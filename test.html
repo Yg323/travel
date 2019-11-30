@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+	// 초기 값 지정
+	$('.puzzle').text("추천 코스를 편집해주세요!");
+	// select 선택이 변경 됐을 때 호출 되는 함수
+		$('.busan_travel').change(function() {
+		$('.puzzle').text($(".busan_travel option:selected").val());
+	});
+});
+    </script>
+</head>
+<body>
+        <select class="busan_travel">
+                <option value="">여행지를 선택해주세요!</option>
+                <option value="HTML">HTML</option>
+                <option value="자바스크립트">자바스크립트</option>
+                <option value="CSS">CSS</option>
+            </select>
+            <div class="puzzle"></div>
+</body>
+</html>

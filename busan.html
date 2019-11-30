@@ -5,68 +5,136 @@
     <link rel="shortcut icon" type="image/x-icon" href="honey.png">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="busan.css">
-    <!-- <script src="busan.js"></script> -->
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="busan.js"></script>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=92f283435fdd4aa3809a7a83baab7bed "></script>
     <title>부산으로</title>
 </head>
 <body>
     <div class="top"><img src="img/부산 제목.png"></div>
     <div class="left">
-        <div class="left-map">지도지도지도</div>
+        <div class="left-map">
+            <table class="route">
+                <tr id=r1><td id=d1></td></tr>
+                <tr id=r2><td id=d1></td></tr>
+                <tr id=r3><td id=d1></td></tr>
+                <tr id=r4><td id=d1></td></tr>
+                <tr id=r5><td id=d1></td></tr>
+                <tr id=r6><td id=d1></td></tr>
+                <tr id=r7><td id=d1></td></tr>
+                <tr id=r8><td id=d1></td></tr>
+                <tr id=r9><td id=d1></td></tr>
+                <tr id=r10><td id=d1></td></tr>
+                <tr id=r11><td id=d1></td></tr>
+                <tr id=r12><td id=d1></td></tr>
+                <tr id=r13><td id=d1></td></tr>
+                <tr id=r14><td id=d1></td></tr>
+                <tr id=r15><td id=d1></td></tr>
+                <tr id=r16><td id=d1></td></tr>
+                <tr id=r17><td id=d1></td></tr>
+                <tr id=r18><td id=d1></td></tr>
+                <tr id=r19><td id=d1></td></tr>
+                <tr id=r20><td id=d1></td></tr>
+                <tr id=r21><td id=d1></td></tr>
+                <tr id=r22><td id=d1></td></tr>
+                <tr id=r23><td id=d1></td></tr>
+            </table>
+        </div>
     </div>
     <div class="right">
-        <!-- 여행지 -->
-        <div class="right1">
+         <!-- 여행지 -->
+        <div class="right_blank">
             <a id="travel"></a>
+        </div>
+        <div class="right1">
             <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"></a>
             <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"></a>
             <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"></a>
             <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"></a>
         </div>
         <div class="right2">
-            <select id="busan_travel" onchange="setSelectList();">
-                <option value="HTML">HTML</option>
-                <option value="자바스크립트">자바스크립트</option>
-                <option value="CSS">CSS</option>
+            <select class="select_travel">
+                <option value="" >가고 싶은 여행지를 선택해주세요!</option>
+                <option value="감천문화마을">감천문화마을</option>
+                <option value="광안리 수변공원">광안리 수변공원</option>
+                <option value="국제시장">국제시장</option>
+                <option value="남포동">남포동</option>
+                <option value="더베이 101">더베이 101</option>
+                <option value="동백섬">동백섬</option>
+                <option value="미포철길">미포철길</option>
             </select>
-            <input type="text" id="textTime">
+            <div class="puzzle_travel"></div>
         </div>
         <div class="right3">
-            RIGHT3
+            COMMENT
         </div>
         <!-- 식사 -->
-        <div class="right1">
+        <div class="right_blank">
             <a id="food"></a>
+        </div>
+        <div class="right1">
             <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"> </a>
             <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"> </a>
             <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"> </a>
             <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"> </a>
         </div>
-        <div class="right2">RIGHT2</div>
-        <div class="right3">RIGHT3</div>
+        <div class="right2">
+            <select class="select_food">
+                <option value="" >가고 싶은 음식점을 선택해주세요</option>
+                <option value="감천문화마을">감천문화마을</option>
+                <option value="광안리 수변공원">광안리 수변공원</option>
+                <option value="국제시장">국제시장</option>
+                <option value="남포동">남포동</option>
+                <option value="더베이 101">더베이 101</option>
+                <option value="동백섬">동백섬</option>
+                <option value="미포철길">미포철길</option>
+            </select>
+        <div class="puzzle_food"></div>
+        </div>
+        <div class="right3">COMMENT</div>
         <!-- 교통편 -->
-        <div class="right1">
+        <div class="right_blank">
             <a id="traffic"></a>
-            <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"></a>
-            <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"></a>
-            <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"></a>
-            <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"></a>
         </div>
-        <div class="right2">RIGHT2</div>
-        <div class="right3">RIGHT3</div>
-        <!-- 숙박 -->
         <div class="right1">
-            <a id="map"></a>
             <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"></a>
             <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"></a>
             <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"></a>
             <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"></a>
         </div>
-        <div class="right2">RIGHT2</div>
-        <div class="right3">
+        <div class="right2">
+            <select class="select_traffic">
+                <option value="" >선택해주세요</option>
+                <option value="HTML">HTML</option>
+                <option value="자바스크립트">자바스크립트</option>
+                <option value="CSS">CSS</option>
+            </select>
+        </div>
+        <div class="right3">COMMENT</div>
+        <!-- 숙박 -->
+        <div class="right_blank">
+            <a id="map"></a>
+        </div>
+        <div class="right1">
+            <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"></a>
+            <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"></a>
+            <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"></a>
+            <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"></a>
+        </div>
+        <div class="right2">
+            <select class="select_map">
+                <option value="" >선택해주세요</option>
+                <option value="HTML">HTML</option>
+                <option value="자바스크립트">자바스크립트</option>
+                <option value="CSS">CSS</option>
+            </select>
+        </div>
+        <div class="right3"> COMMENT
             <!-- <div id="map" style="width:50%;height:30%;"></div> -->
         </div>
     </div>
-    <div class="bottom">BOTTOM</div>
+    <div class="bottom">
+        <img src="img/꿀트립small.png" width="100px">
+    </div>
 </body>
 </html>
