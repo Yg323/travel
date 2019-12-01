@@ -1,52 +1,63 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-@font-face { font-family: '국립박물관문화재단클래식B';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') 
-  format('woff'); 
-  font-weight: normal; 
-  font-style: normal; }
-  @font-face { font-family: 'NanumBarunGothic'; 
-     font-style: normal; 
-     font-weight: 400; 
-     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot'); 
-     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') 
-     format('embedded-opentype'), 
-     url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') 
-     format('woff'), 
-     url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') 
-     format('truetype'); } 
-     @font-face { font-family: 'NanumBarunGothic'; 
-         font-style: normal; font-weight: 700; 
-         src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot'); 
-         src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') 
-         format('embedded-opentype'), 
-         url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') 
-         format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') 
-         format('truetype') } 
-         @font-face { font-family: 'NanumBarunGothic'; font-style: normal; 
-             font-weight: 300; 
-             src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot'); 
-             src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') 
-             format('embedded-opentype'), 
-             url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') 
-             format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') 
-             format('truetype'); } .nanumbarungothic * { font-family: 'NanumBarunGothic', sans-serif; }
-body{
+
+@font-face {
+  font-family: '국립박물관문화재단클래식B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'NanumBarunGothic';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+  src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+  font-family: 'NanumBarunGothic', sans-serif;
+}
+
+body {
   background-color: #dba522;
   font-family: 'NanumBarunGothic';
 }
-.left{
+
+.left {
   justify-content: center;
   display: inline-flex;
   width: 19%;
   height: 100%;
   position: fixed;
-  left:0;
+  left: 0;
   border: 1px solid white;
 }
-.mid{
+
+.mid {
   justify-content: center;
   display: inline-flex;
   width: 39%;
@@ -55,7 +66,8 @@ body{
   left: 20%;
   border: 1px solid white;
 }
-.right{
+
+.right {
   justify-content: center;
   display: inline-flex;
   width: 39%;
@@ -65,7 +77,8 @@ body{
   flex-wrap: wrap;
   border: 1px solid red;
 }
-.right-login{
+
+.right-login {
   justify-content: center;
   display: flex;
   width: 39%;
@@ -74,7 +87,8 @@ body{
   flex-wrap: wrap;
   border: 1px solid white;
 }
-.right-login h1{
+
+.right-login h1 {
   justify-content: center;
   position: relative;
   height: 20%;
@@ -83,45 +97,52 @@ body{
   font-size: large;
   font-weight: bold;
 }
-.login{
+
+.login {
   justify-content: center;
   position: relative;
-  width:70%;
+  width: 70%;
   top: 40%;
 }
-.right-login .login .login1{
-  float: left; 
+
+.right-login .login .login1 {
+  float: left;
   width: 20%;
   height: 20%;
   position: fixed;
 }
-.right-login .login .login1 input{
+
+.right-login .login .login1 input {
   width: 70%;
   height: 20%;
   margin: 1.5%;
   border-radius: 10px;
 }
-.right-login .login .login2{
+
+.right-login .login .login2 {
   float: right;
   width: 40%;
   height: 45%;
-  margin:0.5%;
+  margin: 0.5%;
 }
-.right-login .login .login2 input{
-  width:50%;
-  height:100%; 
+
+.right-login .login .login2 input {
+  width: 50%;
+  height: 100%;
   border-radius: 20px;
 }
-.right-signup{
+
+.right-signup {
   justify-content: center;
   display: flex;
   width: 39%;
   height: 74%;
   position: fixed;
-  top: 26%; 
+  top: 26%;
   flex-wrap: wrap;
   border: 1px solid white;
 }
+<<<<<<< HEAD
 form{
   width: 80%;
 }
@@ -137,8 +158,18 @@ fieldset{
   border: 2px solid white;
 }
 legend{
+=======
+
+.right-signup h1 {
+  justify-content: center;
+  position: relative;
+  height: 10%;
+  top: 5%;
+  left: 35%;
+>>>>>>> 6d8e8817a971398d307a57e4a2b31360f7b6bc92
   font-size: large;
 }
+<<<<<<< HEAD
 .right-signup label{
   display: inline-block;
   width: 31%;
@@ -146,4 +177,24 @@ legend{
 .right-signup input{
   display: inline-block;
   width: 40%;
+=======
+
+.signup {
+  justify-content: center;
+  position: relative;
+  width: 70%;
+  top: 20%;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  height: 50%;
+>>>>>>> 6d8e8817a971398d307a57e4a2b31360f7b6bc92
 }

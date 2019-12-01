@@ -1,3 +1,20 @@
+// 리스트 정렬!
+$(document).ready(function () {
+	// 초기 값 지정
+	$('.puzzle_travel').text("추천 코스를 편집해주세요!");
+	// select 선택이 변경 됐을 때 호출 되는 함수
+		$('.select_travel').change(function() {
+		$('.puzzle_travel').text($(".select_travel option:selected").val());
+	});
+	// 초기 값 지정
+	$('.puzzle_food').text("추천 코스를 편집해주세요!");
+	// select 선택이 변경 됐을 때 호출 되는 함수
+		$('.select_food').change(function() {
+		$('.puzzle_food').text($(".select_food option:selected").val());
+	});
+});
+// 드래그앤 드롭
+
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 	mapOption = {
 		center: new kakao.maps.LatLng(37.56932, 126.97906), // 지도의 중심좌표
@@ -36,10 +53,3 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 							'지도의 중심 좌표는 ' + map.getCenter().toString() +' 입니다.';
 			console.log(message);
         });
-        
-// 리스트 정렬!
-function setSelectList(){
-    var selected = document.getElementById("busan_travel");
-    var word = selected.getElementById("textTime");
-    word.value = selected[selected.selectIndex].text;
-}
