@@ -16,51 +16,42 @@
     <div class="right">
         <div class = "right-login">
             <h1>로그인</h1>
-            <div class="login">
-                <div class ="login1">
-                    <input type="text" name="ID" placeholder="  ID" id="logID"><br>
-                    <input type="text" name="PW" placeholder="  PassWord" id="logPW">
+            
+                <div class="login">
+                    <div class ="login1">
+                        <form action="#">
+                            <input type="text" name="ID" placeholder="  ID" id="logID"><br>
+                            <input type="text" name="PW" placeholder="  PassWord" id="logPW">
+                        </form>
+                    </div>
+                    <form action="#">
+                        <div class ="login2">
+                            <input type="submit" name="Login" value="login" id="logBtn">
+                        </div>
+                    </form>
                 </div>
-                <div class ="login2">
-                    <input type="button" name="Login" value="login" id="logBtn">
-                </div>
-            </div>
+            
         </div>
         <div class = "right-signup">
-            <h1>회원가입</h1>
-            <div class="signup">
-                <table border="1">
-                    <caption>
-                        <input type="submit" name="signup" value="가입" id="signup">
-                        <input type="reset">
-                    </caption>
-                    <tbody>
-                        <tr>
-                            <th scope="row" id="nameTitle">이름</th>
-                            <td>
-                                <span id="nameContents">
-                                    <input type="text" name="name" id="name" maxlength="10" placeholder="10자이내">
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">아이디</th>
-                            <td>
-                                <input id="member_id" name="member_id" placeholder="(영문소문자/숫자, 4~16자)" fw-filter="isFill&amp;isFill&amp;isMin[4]&amp;isMax[16]&amp;isIdentity"
-                                fw-label="아이디" fw-msg="" class="inputTypeText" placeholder="" value="" type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">비밀번호</th>
-                            <td>
-                                <input id="passwd" name="passwd" placeholder="(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)" fw-filter="isFill&amp;isMin[4]&amp;isMax[16]" 
-                                fw-label="비밀번호" fw-msg="" autocomplete="off" maxlength="16" 0="disabled" value="" type="password">
-                            </td>
-                        </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
+            <form method="post" action="">
+                <fieldset>
+                    <legend>회원가입</legend>
+                    <label for="name">아이디</label>
+                    <input type="text" name="name" id="text1"><br>
+                    <label for="password">패스워드</label>
+                    <input for="password" name="password1"><br>
+                    <label for="name">이름</label>
+                    <input type="text" name="name"><br>
+                    <label for="tel">휴대폰 번호</label>
+                    <input type="tel" name="tel"><br>
+                    <label for="email">이메일</label>
+                    <input type="email" name="email"><br>
+                    <input type="radio" name="gender" value="Male"> 남<br>
+                    <input type="radio" name="gender" value="Female"> 여<br>
+                </fieldset>
+                <input type="submit" name="submit" value="가입하기">
+                <input type="reset" name="reset" value="초기화">
+            </form>
         </div>
    </div>
 
