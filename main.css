@@ -142,7 +142,6 @@ body {
   flex-wrap: wrap;
   border: 1px solid white;
 }
-<<<<<<< HEAD
 form{
   width: 80%;
 }
@@ -158,18 +157,8 @@ fieldset{
   border: 2px solid white;
 }
 legend{
-=======
-
-.right-signup h1 {
-  justify-content: center;
-  position: relative;
-  height: 10%;
-  top: 5%;
-  left: 35%;
->>>>>>> 6d8e8817a971398d307a57e4a2b31360f7b6bc92
   font-size: large;
 }
-<<<<<<< HEAD
 .right-signup label{
   display: inline-block;
   width: 31%;
@@ -177,24 +166,4 @@ legend{
 .right-signup input{
   display: inline-block;
   width: 40%;
-=======
-
-.signup {
-  justify-content: center;
-  position: relative;
-  width: 70%;
-  top: 20%;
-}
-
-caption {
-  caption-side: bottom;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-td {
-  height: 50%;
->>>>>>> 6d8e8817a971398d307a57e4a2b31360f7b6bc92
 }
