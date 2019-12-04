@@ -55,22 +55,25 @@ body{
     position: fixed;
     top: 11%;
     width: 490px; height:500px;
-    padding: 10px,5px,10px,5px;
     border: 1px solid blue;
 }
 .left-map .route{
     width: 480px; height:480px;
 }
 tr,td{
+    margin-left: auto; margin-right: auto;
     border: 0.5px solid black;
 }
 #r1,#r3,#r5,#r7,#r9,#r11,#r13,#r15,#r17,#r19,#r21,#r23{
-    width: 40px; height: 26.7px;
+    width: 40px; height: 26.7px; padding: 0; margin: 0;
     border: 0.5px solid black;
 }
 #r2,#r4,#r6,#r8,#r10,#r12,#r14,#r16,#r18,#r20,#r22{
-    width: 40px; height: 13.3px;
+    width: 40px; height: 13.3px; padding: 0; margin: 0;
     border: 0.5px solid black;
+}
+table .icon{
+    padding-top: 10px;
 }
 .right{
     justify-content: flex-end;
