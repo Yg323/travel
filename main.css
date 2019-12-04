@@ -60,7 +60,7 @@ body {
 .mid {
   justify-content: center;
   display: inline-flex;
-  width: 39%;
+  width: 44%;
   height: 100%;
   position: fixed;
   left: 20%;
@@ -70,10 +70,10 @@ body {
 .right {
   justify-content: center;
   display: inline-flex;
-  width: 39%;
+  width: 33%;
   height: 100%;
   position: fixed;
-  left: 60%;
+  left: 65%;
   flex-wrap: wrap;
   border: 1px solid red;
 }
@@ -81,7 +81,7 @@ body {
 .right-login {
   justify-content: center;
   display: flex;
-  width: 39%;
+  width: 33%;
   height: 25%;
   position: fixed;
   flex-wrap: wrap;
@@ -135,7 +135,7 @@ body {
 .right-signup {
   justify-content: center;
   display: flex;
-  width: 39%;
+  width: 33%;
   height: 74%;
   position: fixed;
   top: 26%;
