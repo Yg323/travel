@@ -76,13 +76,6 @@ body {
     flex-wrap: wrap;
     border: 1px solid white;
 }
-.right-icon1 a{
-    
-
-}
-.right-icon2{
-    
-}
-
-  
-
+.ui-datepicker{ font-size: 11px; width: 160px; }
+.ui-datepicker select.ui-datepicker-month{ width:20%; font-size: 11px; }
+.ui-datepicker select.ui-datepicker-year{ width:30%; font-size: 11px; }
