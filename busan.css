@@ -167,6 +167,13 @@ body{
     .right1 img{
         width: 80px; height: 80px;
     }
+    .bottom{
+        justify-content: center;
+        display: flex;
+        height: 5%;
+        width: 98%;
+        /* border: 1px solid red; */
+    }
 }
 @media all and (min-width:1280px){
     .left-map{
