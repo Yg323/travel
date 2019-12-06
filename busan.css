@@ -154,7 +154,7 @@ body{
     .left-map{
         position: fixed;
         top: 11%;
-        width: 370px; height:1000px;
+        width: 400px; height:1000px;
         border: 1px solid blue;
     }
     .right_blank{
