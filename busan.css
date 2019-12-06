@@ -129,7 +129,7 @@ body{
     .left-map{
         position: fixed;
         top: 11%;
-        width: 230px; height:300px;
+        width: 250px; height:800px;
         border: 1px solid blue;
     }
     .right1 img{
@@ -140,6 +140,13 @@ body{
         display: flex;
         flex-wrap: wrap;
         height: 70px;
+        /* border: 1px solid red; */
+    }
+    .bottom{
+        justify-content: center;
+        display: flex;
+        height: 5%;
+        width: 98%;
         /* border: 1px solid red; */
     }
 }
