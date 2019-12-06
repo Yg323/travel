@@ -87,6 +87,9 @@ body{
     text-align: center;
     font-size: large;
 }
+.puzzle_travel{
+    cursor: move;
+}
 .select_food{
     justify-content: center;
     display: flex;
@@ -95,6 +98,9 @@ body{
     color: #dba522;
     text-align: center;
     font-size: large;
+}
+.puzzle_food{
+    cursor: move;
 }
 .right3{
     justify-content: center;
@@ -196,7 +202,7 @@ body{
     .left-map{
         position: fixed;
         top: 15%;
-        width: 650px; height:500px;
+        width: 650px; height:480px;
         border: 1px solid blue;
     }
     .right_blank{
@@ -209,6 +215,45 @@ body{
     .right1 img{
         width: 120px; height: 120px;
     }
+    .day{
+        margin: 0 auto; padding: auto;
+        display: flex; flex-wrap: wrap;
+        width: 353px; height: 155px;
+        border: 1px solid red;
+    }
+    .day_day{
+        width: 33px; height: 44px;
+        border: 0.1px solid red;
+    }
+    .day_lodge{
+        width: 33px; height: 44px;
+        border: 0.1px solid red;
+    }
+    .day_trip{
+        width: 33px; height: 44px;
+        border: 0.1px solid red;
+    }
+    .day_trans{
+        width: 33px; height: 44px;
+        border: 0.1px solid red;
+    }
+    .day_food{
+        width: 33px; height: 55px;
+        border: 0.1px solid red;
+    }
+    .day_trans_sideh{
+        width: 33px; height: 44px;
+        border: 0.1px solid red;
+    }
+    .day_trans_sidel{
+        width: 33px; height: 44px;
+        border: 0.1px solid red;
+    }
+    .day_blank{
+        width: 297px; height: 55px;
+        border: 0.1px solid red;
+    }
+
 }
 
 @media all and (min-width:1900px) {
