@@ -154,7 +154,7 @@ body{
     .left-map{
         position: fixed;
         top: 11%;
-        width: 370px; height:900px;
+        width: 370px; height:1000px;
         border: 1px solid blue;
     }
     .right_blank{
@@ -170,8 +170,8 @@ body{
     .bottom{
         justify-content: center;
         display: flex;
-        height: 5%;
-        width: 98%;
+        height: 3%;
+        width: auto;
         /* border: 1px solid red; */
     }
 }
