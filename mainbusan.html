@@ -6,12 +6,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="honey.png">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainbusan.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/themename/jquery-ui.custom.css" />
     <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    
+    <script src="jquery-timepicker-master/jquery.timepicker.js"></script>
+    <link rel="stylesheet" href="jquery-timepicker-master/jquery.timepicker.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="mainbusan.js"></script>
+
+    
 </head>
 <body>
     <div class="left">
@@ -21,21 +25,107 @@
         <img src="img/부산 선택.png" width="90%">
     </div>
     <div class="right">
-        <h1>부산으로 떠나볼까요?</h1>
-        <form action="#">
+        
+        <p>부산으로 떠나볼까요?</p>
+        
+        <div class="rightc">
+            <form action="#">
             오늘 날짜 : <span id="today"></span><br>
-            <label for="from">출발일</label>
-            <input type="text"id="from_date">
-            <label for="from">도착일</label>
-            <input type="text" id="to_date"><br>
-            <label for="from">출발시간</label>
-            <input type="" name="start">
-            <label for="from">도착시간</label>
-            <input type="" name="end"><br>
+            <span id="from">출발</span>
+            <p>출발일 <input type="text" id="from_date" disabled required size="8" maxlength="5"></p>
+
+            <span id="to">도착</span>
+            <p>도착일 <input type="text" id="to_date" disabled required size="8" maxlength="5"></p>
+
+            <label for="fromtime">출발시간</label>
+            <input type="text" id="stime" name="stime" value="" placeholder="시간선택" required size="8" maxlength="5">
+            <label for="totime">도착시간</label>
+            <input type="text" id="etime" name="etime" value="" placeholder="시간선택" required size="8" maxlength="5">
             
+            <div class="ui-timepicker-wrapper" tabindex="-1" style="position: absolute; top: 29px; left: 8px; display: none;">
+                <ul class="ui-timepicker-list">
+                    <li class="ui-timepicker-am">06:00</li>
+                    <li class="ui-timepicker-am">06:30</li>
+                    <li class="ui-timepicker-am">07:00</li>
+                    <li class="ui-timepicker-am">07:30</li>
+                    <li class="ui-timepicker-am">08:00</li>
+                    <li class="ui-timepicker-am">08:30</li>
+                    <li class="ui-timepicker-am">09:00</li>
+                    <li class="ui-timepicker-am">09:30</li>
+                    <li class="ui-timepicker-am">10:00</li>
+                    <li class="ui-timepicker-am">10:30</li>
+                    <li class="ui-timepicker-am">11:00</li>
+                    <li class="ui-timepicker-am">11:30</li>
+                    <li class="ui-timepicker-pm">12:00</li>
+                    <li class="ui-timepicker-pm">12:30</li>
+                    <li class="ui-timepicker-pm">13:00</li>
+                    <li class="ui-timepicker-pm">13:30</li>
+                    <li class="ui-timepicker-pm">14:00</li>
+                    <li class="ui-timepicker-pm">14:30</li>
+                    <li class="ui-timepicker-pm">15:00</li>
+                    <li class="ui-timepicker-pm">15:30</li>
+                    <li class="ui-timepicker-pm">16:00</li>
+                    <li class="ui-timepicker-pm">16:30</li>
+                    <li class="ui-timepicker-pm">17:00</li>
+                    <li class="ui-timepicker-pm">17:30</li>
+                    <li class="ui-timepicker-pm">18:00</li>
+                    <li class="ui-timepicker-pm">18:30</li>
+                    <li class="ui-timepicker-pm">19:00</li>
+                    <li class="ui-timepicker-pm">19:30</li>
+                    <li class="ui-timepicker-pm">20:00</li>
+                    <li class="ui-timepicker-pm">20:30</li>
+                    <li class="ui-timepicker-pm">21:00</li>
+                    <li class="ui-timepicker-pm">21:30</li>
+                    <li class="ui-timepicker-pm">22:00</li>
+                    <li class="ui-timepicker-pm">22:30</li>
+                    <li class="ui-timepicker-pm">23:00</li>
+                </ul>
+            </div>
+            <div class="ui-timepicker-wrapper" tabindex="-1" style="position: absolute; top: 50.3334px; left: 8px; display: none;">
+                <ul class="ui-timepicker-list">
+                    <li class="ui-timepicker-am">06:00</li>
+                    <li class="ui-timepicker-am">06:30</li>
+                    <li class="ui-timepicker-am">07:00</li>
+                    <li class="ui-timepicker-am">07:30</li>
+                    <li class="ui-timepicker-am">08:00</li>
+                    <li class="ui-timepicker-am">08:30</li>
+                    <li class="ui-timepicker-am">09:00</li>
+                    <li class="ui-timepicker-am">09:30</li>
+                    <li class="ui-timepicker-am">10:00</li>
+                    <li class="ui-timepicker-am">10:30</li>
+                    <li class="ui-timepicker-am">11:00</li>
+                    <li class="ui-timepicker-am">11:30</li>
+                    <li class="ui-timepicker-pm">12:00</li>
+                    <li class="ui-timepicker-pm">12:30</li>
+                    <li class="ui-timepicker-pm">13:00</li>
+                    <li class="ui-timepicker-pm">13:30</li>
+                    <li class="ui-timepicker-pm">14:00</li>
+                    <li class="ui-timepicker-pm">14:30</li>
+                    <li class="ui-timepicker-pm">15:00</li>
+                    <li class="ui-timepicker-pm">15:30</li>
+                    <li class="ui-timepicker-pm">16:00</li>
+                    <li class="ui-timepicker-pm">16:30</li>
+                    <li class="ui-timepicker-pm">17:00</li>
+                    <li class="ui-timepicker-pm">17:30</li>
+                    <li class="ui-timepicker-pm">18:00</li>
+                    <li class="ui-timepicker-pm">18:30</li>
+                    <li class="ui-timepicker-pm">19:00</li>
+                    <li class="ui-timepicker-pm">19:30</li>
+                    <li class="ui-timepicker-pm">20:00</li>
+                    <li class="ui-timepicker-pm">20:30</li>
+                    <li class="ui-timepicker-pm">21:00</li>
+                    <li class="ui-timepicker-pm">21:30</li>
+                    <li class="ui-timepicker-pm">22:00</li>
+                    <li class="ui-timepicker-pm">22:30</li>
+                    <li class="ui-timepicker-pm">23:00</li>
+                </ul>
+            </div>
+
             <!-- 버튼 input type="submit" value="Send"> -->
             
-        </form>
+            </form>
+        </div>
+        
     </div>
     
 </body>

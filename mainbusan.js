@@ -12,27 +12,55 @@ $(function(){
         ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
         ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
         ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
-        ,minDate: "0" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
-        ,maxDate: "+1m" //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)
+        ,beforeShow: function(input) {
+
+		    var i_offset= $(input).offset(); //클릭된 input의 위치값 체크
+
+		    setTimeout(function(){
+
+		       $('#ui-datepicker-div').css({'top':i_offset.top, 'bottom':'', 'left':'10px'});
+
+		    })
+
+		} 
+
     });
+    
     $("#today").text(new Date().toLocaleDateString()); //오늘 날짜 출력
 
-    //시작일
-    $("#from_date").datepicker({
-        onClose: function( selectedDate ) {    
-            // 시작일 datepicker가 닫힐때
-            // 종료일의 선택할수있는 최소 날짜(minDate)를 선택한 시작일로 지정
-            $("#to_Date").datepicker( "option", "minDate", selectedDate );
-        }
+    $('#stime')
+        .timepicker({timeFormat:'H:i','minTime':'06:00','maxTime':'23:00','scrollDefaultNow': true }) //stime 시작 기본 설정
+        .on('changeTime',function() { //stime 을 선택한 후 동작
+            var from_time = $("input[name='stime']").val(); //stime 값을 변수에 저장
+            $('#etime').timepicker('option','minTime', from_time);//etime의 mintime 지정
+            if ($('#etime').val() && $('#etime').val() < from_time) {
+                $('#etime').timepicker('setTime', from_time);
+    //etime을 먼저 선택한 경우 그리고 etime시간이 stime시간보다 작은경우 etime시간 변경
+            }  
+        });
+ 
+    $('#etime').timepicker({timeFormat:'H:i','minTime':'06:00','maxTime':'23:00'});//etime 시간 기본 설정
+ 
+});
+//출발
+$(function() {
+    $('#from').datepicker({
+      onSelect: function(dateText) {
+   $('#from_date').datepicker("setDate", $(this).datepicker("getDate"));
+      }
     });
-    //종료일
-    $("#to_date").datepicker({
-        onClose: function( selectedDate ) {
-            // 종료일 datepicker가 닫힐때
-            // 시작일의 선택할수있는 최대 날짜(maxDate)를 선택한 종료일로 지정 
-            $("#from_Date").datepicker( "option", "maxDate", selectedDate );
-        }
+});  
+$(function() {
+    $("#from_date").datepicker();
+});
+//도착
+$(function() {
+    $('#to').datepicker({
+      onSelect: function(dateText) {
+   $('#to_date').datepicker("setDate", $(this).datepicker("getDate"));
+      }
     });
-    
-    
+});  
+$(function() {
+    $("#to_date").datepicker();
 });
