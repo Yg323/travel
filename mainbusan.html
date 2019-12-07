@@ -25,9 +25,9 @@
         <img src="img/부산 선택.png" width="90%">
     </div>
     <div class="right">
-        
-        <p>부산으로 떠나볼까요?</p>
-        
+        <div class="right1">
+            <p>부산으로 떠나볼까요?</p>
+        </div>
         <div class="rightc">
             <form action="#">
             오늘 날짜 : <span id="today"></span><br>
@@ -119,9 +119,49 @@
                     <li class="ui-timepicker-pm">22:30</li>
                     <li class="ui-timepicker-pm">23:00</li>
                 </ul>
-            </div>
-
-            <!-- 버튼 input type="submit" value="Send"> -->
+            </div> <br>
+            출발지 <input name="startplace" type="text" placeholder="출발지입력"><br>
+            <label for="people">인원 <sub># 미취학아동은 초등학생까지 입니다.</sub></label><br>
+            <p>
+                성인
+                <input list="adults" name="adult" placeholder="인원선택">
+                <datalist id="adults">
+                    <option value="1명">
+                    <option value="2명">
+                    <option value="3명">
+                    <option value="4명">
+                    <option value="5명">
+                </datalist>
+            </p>
+            <p>
+                취학아동
+                <input list="schoolchildren" name="schoolchild" placeholder="인원선택">
+                <datalist id="schoolchildren">
+                    <option value="1명">
+                    <option value="2명">
+                    <option value="3명">
+                    <option value="4명">
+                    <option value="5명">
+                </datalist>
+            </p>
+            <p>
+                미취학아동
+                <input list="preschoolchildren" name="preschoolchild" placeholder="인원선택">
+                <datalist id="preschoolchildren">
+                    <option value="1명">
+                    <option value="2명">
+                    <option value="3명">
+                    <option value="4명">
+                    <option value="5명">
+                </datalist>
+            </p>
+            <label for="concept">정해진 컨셉이 있어요! <sub># 하나만 선택해주세요.</sub></label><br>
+            <input type="radio" name="con" value="trip1">효도여행
+            <input type="radio" name="con" value="trip2">연인과의 여행
+            <input type="radio" name="con" value="trip3">가족여행
+            <input type="radio" name="con" value="trip4">액티비티 여행 
+            <br>
+            <input type="submit" value="Send">
             
             </form>
         </div>

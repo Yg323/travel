@@ -81,20 +81,40 @@ body {
     border: 1px solid white;
 }
 
-.righth p{
-    justify-content: center;
-    font-size: larger;
-    top: 10%;
-}
+
 .rightc{
-    justify-content: center;
+    
     display: inline-flex;
-    width: 25%;
+    width: 31%;
     height: 87%;
-    top: 15%;
+    top: 10%;
     position: fixed;
-    left: 70%;
+    left: 66%;
     flex-wrap: wrap;
     border: 1px solid white;
     font-size: 80%;
+}
+@media all and (max-width:768px) {
+   
+}
+@media all and (min-width:768px) {
+    
+}
+@media all and (min-width:1280px){
+    .right1{
+        padding:4%;
+    }
+    .right1 p{
+       font-size: 28px;
+   }
+   .rightc{
+       font-size: 10px;
+   }
+}
+@media all and (min-width:1360px){
+    
+}
+
+@media all and (min-width:1900px) {
+    
 }
