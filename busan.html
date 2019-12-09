@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/x-icon" href="honey.png">
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="busan.css">
+    <link rel="stylesheet" type="text/css" href="korea.css">
     <script src="jquery-3.4.1.min.js"></script>
-    <script src="busan.js"></script>
-    <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="korea.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=92f283435fdd4aa3809a7a83baab7bed "></script>
     <title>부산으로</title>
 </head>
@@ -15,22 +15,89 @@
     <div class="top"><img src="img/부산 제목.png"></div>
     <div class="left"></div>
     <div class="left-map">
-        <div class="day">
-            <div class="day_day"></div><div class="day_trans"></div><div class="day_trip"></div>
-            <div class="day_trans"></div><div class="day_trip"></div>
-            <div class="day_trans"></div><div class="day_trip"></div>
-            <div class="day_trans"></div><div class="day_trip"></div><div class="day_trans_sideh"></div>
-            <div class="day_blank"></div><div class="day_food"></div>
-            <div class="day_lodge"></div><div class="day_trans"></div><div class="day_trip"></div>
-            <div class="day_trans"></div><div class="day_trip"></div>
-            <div class="day_trans"></div><div class="day_trip"></div>
-            <div class="day_trans"></div><div class="day_trip"></div><div class="day_trans_sidel"></div>
-        </div>
-        <div class="day">
-            
-        </div>
-        <div class="day">
-            
+        <div class="css_test">
+            <div class="day">
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_trans_sideh"></div>
+                <div class="day_blank">
+                        <button type="button" onclick="j_test(-659)">왼쪽으로 스크롤</button>
+                        DAY1
+                        <button type="button" onclick="j_test(658)">오른쪽으로 스크롤</button><br>
+                </div>
+                <div class="day_container_blank"><div class="day_food"><img src="img/음식 아이콘.png" width="64px"></div><div class="day_text"></div><div class="day_route"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"><img src="img/여행지 아이콘.png" width="64px"></div><div class="day_text"></div></div>
+                <div class="day_trans_sidel"></div>
+            </div>
+            <div class="day">
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_trans_sideh"></div>
+                <div class="day_blank">
+                        <button type="button" onclick="j_test(-659)">왼쪽으로 스크롤</button>DAY2
+                        <button type="button" onclick="j_test(658)">오른쪽으로 스크롤</button><br>
+                </div>
+                <div class="day_container_blank"><div class="day_food"></div><div class="day_text"></div><div class="day_route"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_trans_sidel"></div>
+            </div>
+            <div class="day">
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_trans_sideh"></div>
+                <div class="day_blank">
+                        <button type="button" onclick="j_test(-659)">왼쪽으로 스크롤</button>DAY3
+                        <button type="button" onclick="j_test(658)">오른쪽으로 스크롤</button><br>
+                </div>
+                <div class="day_container_blank"><div class="day_food"></div><div class="day_text"></div><div class="day_route"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trans"></div><div class="day_text"></div></div>
+                <div class="day_container"><div class="day_trip"></div><div class="day_text"></div></div>
+                <div class="day_trans_sidel"></div>
+            </div>
         </div>
     </div>
     <div class="right">

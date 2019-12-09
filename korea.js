@@ -13,6 +13,15 @@ $(document).ready(function () {
 		$('.puzzle_food').text($(".select_food option:selected").val());
 	});
 });
+// 화면 전환
+function j_test(n){
+	$('.css_test').scrollLeft( $('.css_test').scrollLeft() + n );
+}
 // 드래그앤 드롭
-$( '.puzzle_travel' ).draggable();
-$( '.puzzle_food' ).draggable();
+$( function() {
+	$( ".puzzle_travel" ).draggable();
+	$( '.puzzle_food' ).draggable();
+  } );
+
+
+

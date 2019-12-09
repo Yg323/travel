@@ -134,6 +134,8 @@ body{
 @media all and (max-width:768px) {
     .left-map{
         position: fixed;
+        overflow: hidden;
+        white-space: nowrap;
         top: 11%;
         width: 250px; height:800px;
         border: 1px solid blue;
@@ -159,6 +161,8 @@ body{
 @media all and (min-width:768px) {
     .left-map{
         position: fixed;
+        overflow: hidden;
+        white-space: nowrap;
         top: 11%;
         width: 400px; height:1000px;
         border: 1px solid blue;
@@ -184,6 +188,8 @@ body{
 @media all and (min-width:1280px){
     .left-map{
         position: fixed;
+        overflow: hidden;
+        white-space: nowrap;
         top: 15%;
         width: 600px; height:440px;
         border: 1px solid blue;
@@ -205,6 +211,11 @@ body{
         width: 650px; height:480px;
         border: 1px solid blue;
     }
+    .css_test {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
+    }
     .right_blank{
         justify-content: center;
         display: flex;
@@ -216,41 +227,51 @@ body{
         width: 120px; height: 120px;
     }
     .day{
-        margin: 0 auto; padding: auto;
-        display: flex; flex-wrap: wrap;
-        width: 353px; height: 155px;
-        border: 1px solid red;
+        margin-top: 30px;
+        display: inline-flex; flex-wrap: wrap;
+        width: 648px; height: 370px;
+        border: 2px solid rgb(243, 71, 100);
     }
-    .day_day{
-        width: 33px; height: 44px;
-        border: 0.1px solid red;
+    .day_container{
+        width: 64.5px; height: 107.5px;
+    }
+    .day_container_blank{
+        width: 64.5px; height: 150.5px;
     }
     .day_lodge{
-        width: 33px; height: 44px;
+        width: 64.5px; height: 64.5px;
         border: 0.1px solid red;
     }
     .day_trip{
-        width: 33px; height: 44px;
+        width: 64.5px; height: 64.5px;
         border: 0.1px solid red;
     }
     .day_trans{
-        width: 33px; height: 44px;
+        width: 64.5px; height: 64.5px;
         border: 0.1px solid red;
     }
     .day_food{
-        width: 33px; height: 55px;
+        width: 64.5px; height: 64.5px;
         border: 0.1px solid red;
     }
     .day_trans_sideh{
-        width: 33px; height: 44px;
+        width: 64.5px; height: 107.5px;
         border: 0.1px solid red;
     }
     .day_trans_sidel{
-        width: 33px; height: 44px;
+        width: 64.5px; height: 107.5px;
         border: 0.1px solid red;
     }
     .day_blank{
-        width: 297px; height: 55px;
+        width: 580.5px; height: 150.5px;
+        border: 0.1px solid red;
+    }
+    .day_text{
+        width: 64.5px; height: 43px;
+        border: 0.1px solid red;
+    }
+    .day_route{
+        width: 64.5px; height: 43px;
         border: 0.1px solid red;
     }
 
@@ -259,6 +280,8 @@ body{
 @media all and (min-width:1900px) {
     .left-map{
         position: fixed;
+        overflow: hidden;
+        white-space: nowrap;
         top: 16%;
         width: 920px; height:710px;
         border: 1px solid blue;
