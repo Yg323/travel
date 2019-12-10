@@ -47,9 +47,10 @@ body {
     font-family: 'NanumBarunGothic';
     
 }
-.ui-datepicker{ font-size: 10px; width: 20%; }
-.ui-datepicker select.ui-datepicker-month{ width:20%; font-size: 11px; }
-.ui-datepicker select.ui-datepicker-year{ width:20%; font-size: 11px; }
+.ui-datepicker{ font-size: 10px;}
+.ui-datepicker select.ui-datepicker-month{font-size: 11px; }
+.ui-datepicker select.ui-datepicker-year{font-size: 11px; }
+
 
 .left {
     justify-content: center;
@@ -80,11 +81,31 @@ body {
     flex-wrap: wrap;
     border: 1px solid white;
 }
+input[type=text]{
+    align-items: center;
+    width:30%;
+    box-sizing: border-box;
+    
+}
+input[type=text]:focus{
+    background-color: gainsboro;
+}
 
+.rightc #adult, #schoolchildren, #preschoolchildren{
+    width:20%;
+}
+
+.right1{
+    justify-content: center;
+    display: inline-flex;
+    width: 20%;
+    padding: 1%;
+    position: fixed;
+    /* border: 1px solid white; */
+}
 
 .rightc{
     
-    display: inline-flex;
     width: 31%;
     height: 87%;
     top: 10%;
@@ -92,29 +113,151 @@ body {
     left: 66%;
     flex-wrap: wrap;
     border: 1px solid white;
-    font-size: 80%;
+    justify-content: center;
+    display: inline-flex;
+}
+.rightc #from, #to{
+    display: inline-block;
+    font-size: 10px;
+    padding: 0;
 }
 @media all and (max-width:768px) {
-   
-}
-@media all and (min-width:768px) {
     
-}
-@media all and (min-width:1280px){
-    .right1{
-        padding:4%;
-    }
-    .right1 p{
+    .right1 p#title{
        font-size: 28px;
+       text-align: center;
    }
    .rightc{
+    text-align: center;
+    }
+   .rightc #from, #to{
        font-size: 10px;
    }
 }
-@media all and (min-width:1360px){
+@media all and (min-width:768px) {
     
+    .right1 p#title{
+       font-size: 30px;
+       text-align: center;
+   }
+   .rightc{
+    text-align: center;
+    }
+   .rightc #from, #to{
+       font-size: 10px;
+   }
+}
+@media all and (min-width:1280px){
+    .right1 p#title{
+        font-size: 27px;
+        text-align: center;
+    }
+    .rightc{
+        text-align: center;
+    }
+   .rightc #from, #to{
+       font-size: 11px;
+   }
+   .rightc #from_date, #to_date{
+    width:33%;
+    height: 21px;
+    margin: 3px 3px;
+    text-align: center;
+    }
+    .rightc #stime, #etime{
+        width:23%;
+        height: 21px;
+        margin:3px 28px 3px 10px;
+        text-align: center;
+   }
+   .rightc #startplace{
+    width:70%;
+    height: 21px;
+    margin: 3px 8px;
+    }
+    .rightc p#otherperson{
+        font-size: 10px;
+    }
+    .rightc #adult, #schoolchildren, #preschoolchildren{
+        width:15%;
+        height: 21px;
+        margin: 3px 8px 3px 3px;
+    }
+}
+@media all and (min-width:1360px){
+    .right1 p#title{
+       font-size: 30px;
+       text-align: center;
+   }
+   .rightc{
+    text-align: center;
+    }
+   .rightc #from, #to{
+       font-size: 11px;
+   }
+   .rightc #from_date, #to_date{
+    width:35%;
+    height: 25px;
+    margin: 3px 3px;
+    text-align: center;
+    }
+    .rightc #stime, #etime{
+        width:25%;
+        height: 25px;
+        margin:3px 28px 3px 10px;
+        text-align: center;
+   }
+   .rightc #startplace{
+    width:80%;
+    height: 25px;
+    margin: 3px 8px;
+    }
+    .rightc p#otherperson{
+        font-size: 10px;
+    }
+    .rightc #adult, #schoolchildren, #preschoolchildren{
+        width:16%;
+        height: 27px;
+        margin: 3px 8px 3px 3px;
+    }
+
+
 }
 
 @media all and (min-width:1900px) {
     
+    .right1 p#title{
+       font-size:40px;
+       text-align: center;
+   }
+   .rightc{
+    text-align: center;
+    }
+   .rightc #from, #to{
+       font-size: 16px;
+   }
+   .rightc #from_date, #to_date{
+       width:37%;
+       height: 30px;
+       margin: 5px 5px;
+       text-align: center;
+   } 
+   .rightc #stime, #etime{
+        width:20%;
+        height: 30px;
+        margin:5px 30px 5px 10px;
+        text-align: center;
+   }
+   .rightc #startplace{
+       width:75%;
+       height: 30px;
+       margin: 5px 10px;
+   }
+   
+   .rightc #adult, #schoolchildren, #preschoolchildren{
+        width:20%;
+        height: 30px;
+        margin: 5px 10px 5px 5px;
+   }
+  
 }

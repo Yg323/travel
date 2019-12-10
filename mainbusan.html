@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="honey.png">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="mainbusan.css">
-    <link rel="stylesheet" href="css/themename/jquery-ui.custom.css" />
+    <!-- <link rel="stylesheet" href="css/themename/jquery-ui.custom.css" /> -->
     <script src="jquery-3.4.1.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     
@@ -26,21 +26,24 @@
     </div>
     <div class="right">
         <div class="right1">
-            <p>부산으로 떠나볼까요?</p>
+            <p id="title">부산으로 떠나볼까요?</p>
         </div>
         <div class="rightc">
             <form action="#">
-            오늘 날짜 : <span id="today"></span><br>
-            <span id="from">출발</span>
-            <p>출발일 <input type="text" id="from_date" disabled required size="8" maxlength="5"></p>
-
-            <span id="to">도착</span>
-            <p>도착일 <input type="text" id="to_date" disabled required size="8" maxlength="5"></p>
-
+            <br>
+              오늘 날짜 : <span id="today"></span><br>
+            <br>
+            <span id="from"> </span>
+            <span id="to"> </span>
+            <br>
+            <p id="date">출발일 <input type="text" id="from_date" disabled > 
+                도착일 <input type="text" id="to_date" disabled ></p>
+            <br>
+            <br>
             <label for="fromtime">출발시간</label>
-            <input type="text" id="stime" name="stime" value="" placeholder="시간선택" required size="8" maxlength="5">
+            <input type="text" id="stime" name="stime" value="" placeholder="시간선택">
             <label for="totime">도착시간</label>
-            <input type="text" id="etime" name="etime" value="" placeholder="시간선택" required size="8" maxlength="5">
+            <input type="text" id="etime" name="etime" value="" placeholder="시간선택" >
             
             <div class="ui-timepicker-wrapper" tabindex="-1" style="position: absolute; top: 29px; left: 8px; display: none;">
                 <ul class="ui-timepicker-list">
@@ -120,48 +123,41 @@
                     <li class="ui-timepicker-pm">23:00</li>
                 </ul>
             </div> <br>
-            출발지 <input name="startplace" type="text" placeholder="출발지입력"><br>
-            <label for="people">인원 <sub># 미취학아동은 초등학생까지 입니다.</sub></label><br>
-            <p>
-                성인
-                <input list="adults" name="adult" placeholder="인원선택">
-                <datalist id="adults">
-                    <option value="1명">
-                    <option value="2명">
-                    <option value="3명">
-                    <option value="4명">
-                    <option value="5명">
-                </datalist>
-            </p>
-            <p>
-                취학아동
-                <input list="schoolchildren" name="schoolchild" placeholder="인원선택">
-                <datalist id="schoolchildren">
-                    <option value="1명">
-                    <option value="2명">
-                    <option value="3명">
-                    <option value="4명">
-                    <option value="5명">
-                </datalist>
-            </p>
-            <p>
-                미취학아동
-                <input list="preschoolchildren" name="preschoolchild" placeholder="인원선택">
-                <datalist id="preschoolchildren">
-                    <option value="1명">
-                    <option value="2명">
-                    <option value="3명">
-                    <option value="4명">
-                    <option value="5명">
-                </datalist>
-            </p>
-            <label for="concept">정해진 컨셉이 있어요! <sub># 하나만 선택해주세요.</sub></label><br>
-            <input type="radio" name="con" value="trip1">효도여행
-            <input type="radio" name="con" value="trip2">연인과의 여행
-            <input type="radio" name="con" value="trip3">가족여행
-            <input type="radio" name="con" value="trip4">액티비티 여행 
             <br>
-            <input type="submit" value="Send">
+            <br>
+            <label for="splace">출발지</label>
+            <input type="text" id="startplace" name="startplace"  type="text" placeholder="출발지입력"><br>
+            <br>
+            <br>
+            <br>
+            <label for="person">인원</label>
+            <br>
+            <p id="otherperson">** 미취학아동은 초등학생까지 입니다. **</p>
+            <br>
+            <label for="adult">성인</label>
+                <select id="adult" name="adult">
+                    <option value="1명">1</option>
+                    <option value="2명">2</option>
+                    <option value="3명">3</option>
+                    <option value="4명">4</option>
+                </select>
+            <label for="schoolchildren">취학아동</label>
+                <select id="schoolchildren" name="schoolchildren">
+                    <option value="1명">1</option>
+                    <option value="2명">2</option>
+                    <option value="3명">3</option>
+                    <option value="4명">4</option>
+                </select>
+            <label for="preschoolchildren">미취학아동</label>
+                <select id="preschoolchildren" name="preschoolchildren">
+                    <option value="1명">1</option>
+                    <option value="2명">2</option>
+                    <option value="3명">3</option>
+                    <option value="4명">4</option>
+                </select>
+            <br>
+            <br>
+            <br>
             
             </form>
         </div>

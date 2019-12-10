@@ -67,8 +67,9 @@ body {
     border: 1px solid white;
 }
 .right {
-    justify-content: center;
-    display: inline-flex;
+    
+    display: flex;
+    
     width: 33%;
     height: 100%;
     position: fixed;
