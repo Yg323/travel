@@ -88,7 +88,7 @@ body{
     background-color: whitesmoke;
     color: #dba522;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
 
 .select_food{
@@ -98,7 +98,7 @@ body{
     background-color: whitesmoke;
     color: #dba522;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
 .select_map{
     justify-content: center;
@@ -107,7 +107,7 @@ body{
     background-color: whitesmoke;
     color: #dba522;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
 .right3{
     justify-content: center;
@@ -138,7 +138,7 @@ body{
     font-size: 20px; color: black;
     width: 35%; height: 30px;
 }
-.puzzle_travel{
+.puzzle_map{
     justify-content: center;
     display: flex;
     font-size: 20px; color: black;
@@ -152,6 +152,11 @@ body{
         top: 11%;
         width: 250px; height:800px;
         border: 1px solid blue;
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
     }
     .right1 img{
         width: 60px; height: 60px;
@@ -180,6 +185,11 @@ body{
         width: 400px; height:1000px;
         border: 1px solid blue;
     }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
+    }
     .right_blank{
         justify-content: center;
         display: flex;
@@ -206,6 +216,11 @@ body{
         top: 15%;
         width: 600px; height:440px;
         border: 1px solid blue;
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
     }
     .right_blank{
         justify-content: center;
@@ -319,6 +334,11 @@ body{
         width: 920px; height:710px;
         border: 1px solid blue;
     }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
+    }
     .right_blank{
         justify-content: center;
         display: flex;
@@ -328,6 +348,74 @@ body{
     }
     .right1 img{
         width: 120px; height: 120px;
+    }
+    .day{
+        margin-top: 30px;
+        display: inline-flex; flex-wrap: wrap;
+        width: 648px; height: 370px;
+        /* border: 2px solid rgb(243, 71, 100); */
+    }
+    .day_container{
+        width: 64.5px; height: 107.5px;
+    }
+    .day_container_blank{
+        width: 64.5px; height: 150.5px;
+    }
+    .day_lodge{
+        width: 64.5px; height: 64.5px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trip{
+        width: 64.5px; height: 64.5px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trans{
+        width: 64.5px; height: 64.5px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_food{
+        width: 64.5px; height: 64.5px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trans_sideh{
+        width: 64.5px; height: 107.5px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sideh.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sidel{
+        width: 64.5px; height: 107.5px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sidel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_blank{
+        align-content: center;
+        width: 380.5px; height: 150.5px;
+        padding-left: 200px;
+        /* border: 0.1px solid red; */
+    }
+    .day_text{
+        width: 64.5px; height: 42px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        /* border: 0.1px solid red; */
+    }
+    .day_route{
+        width: 64.5px; height: 43px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경route.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 

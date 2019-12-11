@@ -1,72 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Droppable - Prevent propagation</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <style>
-  #draggable { width: 100px; height: 40px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
-  #droppable, #droppable2 { width: 230px; height: 120px; padding: 0.5em; float: left; margin: 10px; }
-  #droppable-inner, #droppable2-inner { width: 170px; height: 60px; padding: 0.5em; float: left; margin: 10px; }
-  </style>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#draggable" ).draggable();
- 
-    $( "#droppable, #droppable-inner" ).droppable({
-      classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "> p" )
-            .html( "Dropped!" );
-        return false;
-      }
-    });
- 
-    $( "#droppable2, #droppable2-inner" ).droppable({
-      greedy: true,
-      classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: function( event, ui ) {
-        $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "> p" )
-            .html( "Dropped!" );
-      }
-    });
-  } );
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script src="test.js"></script>
+  
 </head>
-<body>
- 
-<div id="draggable" class="ui-widget-content">
-  <p>Drag me to my target</p>
-</div>
- 
-<div id="droppable" class="ui-widget-header">
-  <p>Outer droppable</p>
-  <div id="droppable-inner" class="ui-widget-header">
-    <p>Inner droppable (not greedy)</p>
-  </div>
-</div>
- 
-<div id="droppable2" class="ui-widget-header">
-  <p>Outer droppable</p>
-  <div id="droppable2-inner" class="ui-widget-header">
-    <p>Inner droppable (greedy)</p>
-  </div>
-</div>
- 
- 
+<div class="wrapper">
+	
+	<header>
+		<h1>Whack-a-Mole</h1>
+		<div class="score-box" id="score-box">
+			<h2>Score</h2>
+			<p class="score-out" id="score-out">0</p>
+		</div><!-- end score-box -->
+	</header>
+	<main>
+		<button class="btn-start" id="btn-start">Start Game</button>
+		<div class="game-container">
+			<div class="row">
+				<div class="box">
+					<img src="https://res.michaelwhyte.ca/mole.png" alt="mole" class="mole-pic" id="mole-01">
+					<img src="https://res.michaelwhyte.ca/dirt.svg" alt="dirt" class="dirt-pic">
+					<div class="mask"></div><!-- end mask -->
+				</div><!-- end box -->
+				<div class="box">
+					<img src="https://res.michaelwhyte.ca/mole.png" alt="mole" class="mole-pic"
+					id="mole-02">
+					<img src="https://res.michaelwhyte.ca/dirt.svg" alt="dirt" class="dirt-pic">
+					<div class="mask"></div><!-- end mask -->
+				</div><!-- end box -->
+				<div class="box">
+					<img src="https://res.michaelwhyte.ca/mole.png" alt="mole" class="mole-pic"
+					id="mole-03">
+					<img src="https://res.michaelwhyte.ca/dirt.svg" alt="dirt" class="dirt-pic">
+					<div class="mask"></div><!-- end mask -->
+				</div><!-- end box -->
+			</div><!-- end row -->
+			<div class="row">
+				<div class="box">
+					<img src="https://res.michaelwhyte.ca/mole.png" alt="mole" class="mole-pic" id="mole-04">
+					<img src="https://res.michaelwhyte.ca/dirt.svg" alt="dirt" class="dirt-pic">
+					<div class="mask"></div><!-- end mask -->
+				</div><!-- end box -->
+				<div class="box">
+					<img src="https://res.michaelwhyte.ca/mole.png" alt="mole" class="mole-pic" id="mole-05">
+					<img src="https://res.michaelwhyte.ca/dirt.svg" alt="dirt" class="dirt-pic">
+					<div class="mask"></div><!-- end mask -->
+				</div><!-- end box -->
+				<div class="box">
+					<img src="https://res.michaelwhyte.ca/mole.png" alt="mole" class="mole-pic" id="mole-06">
+					<img src="https://res.michaelwhyte.ca/dirt.svg" alt="dirt" class="dirt-pic">
+					<div class="mask"></div><!-- end mask -->
+				</div><!-- end box -->
+			</div><!-- end row -->
+		</div><!-- end game-container -->
+	</main>
+	
+</div><!-- end wrapper -->
 </body>
 </html>
