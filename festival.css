@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: '국립박물관문화재단클래식B';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'),
+        url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'),
+        url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'),
+        url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'),
+        url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+.nanumbarungothic * {
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+body {
+    background-color: #dba522;
+    font-family: 'NanumBarunGothic';
+    
+}
+.left {
+    justify-content: center;
+    display: inline-flex;
+    width: 19%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    border: 1px solid white;
+}
+
+.mid {
+    justify-content: center;
+    display: inline-flex;
+    width: 44%;
+    height: 100%;
+    position: fixed;
+    left: 20%;
+    border: 1px solid white;
+}
+.right {
+    justify-content: center;
+    display: inline-flex;
+    width: 33%;
+    height: 100%;
+    position: fixed;
+    left: 65%;
+    flex-wrap: wrap;
+    border: 1px solid white;
+}
+.righthomeicon{
+    position: absolute;
+    top:1%;
+    left: 87%;
+}
+.righticon1{
+    position: absolute;
+    top:3%;
+    left: 35%;
+}
+/* #iconimg1{
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+} */
+.righticon2{
+    position: absolute;
+    top:27%;
+    left: 35%;
+}
+/* #iconimg2{
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+} */
+.righticon3{
+    position: absolute;
+    top:51%;
+    left: 35%;
+}
+#iconimg3{
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+}
+.righticon4{
+    position: absolute;
+    top:75%;
+    left: 35%;
+}
+/* #iconimg4{
+    opacity: 0.6;
+    filter: alpha(opacity=40);
+} */
