@@ -88,7 +88,7 @@ body{
     background-color: whitesmoke;
     color: #dba522;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
 
 .select_food{
@@ -98,7 +98,7 @@ body{
     background-color: whitesmoke;
     color: #dba522;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
 .select_map{
     justify-content: center;
@@ -107,14 +107,29 @@ body{
     background-color: whitesmoke;
     color: #dba522;
     text-align: center;
-    font-size: large;
+    font-size: 20px;
 }
 .right3{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     height: 610px; padding: 1%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+}
+.travel_if{
+    width: 70%; height: 100%;
+}
+.travel_im{
+    width: 30%;
+}
+.food_if{
+    width: 70%; height: 100%;
+}
+.food_im{
+    width: 30%; 
+}
+.map_if{
+    width: 100%;
 }
 .bottom{
     justify-content: center;
@@ -138,7 +153,7 @@ body{
     font-size: 20px; color: black;
     width: 35%; height: 30px;
 }
-.puzzle_travel{
+.puzzle_map{
     justify-content: center;
     display: flex;
     font-size: 20px; color: black;
@@ -151,7 +166,12 @@ body{
         white-space: nowrap;
         top: 11%;
         width: 250px; height:800px;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
     }
     .right1 img{
         width: 60px; height: 60px;
@@ -170,15 +190,18 @@ body{
         width: 98%;
         /* border: 1px solid red; */
     }
-}
-@media all and (min-width:768px) {
     .left-map{
         position: fixed;
         overflow: hidden;
         white-space: nowrap;
         top: 11%;
         width: 400px; height:1000px;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
     }
     .right_blank{
         justify-content: center;
@@ -197,6 +220,198 @@ body{
         width: auto;
         /* border: 1px solid red; */
     }
+    .day_trip img{
+        width: 60px;
+    }
+    .day_trans img{
+        height: 50px;
+    }
+    .day{
+        margin-top: 60px;
+        display: inline-flex; flex-wrap: wrap;
+        width: 360px; height: 210px;
+        /* border: 2px solid rgb(243, 71, 100); */
+    }
+    .day_container{
+        width: 36px; height: 60px;
+    }
+    .day_container1{
+        width: 36px; height: 60px;
+    }
+    .day_container_blank{
+        width: 36px; height: 84px;
+    }
+    .day_lodge{
+        width: 36px; height: 36px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trip{
+        width: 36px; height: 36px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trans{
+        width: 36px; height: 36px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sideh{
+        width: 36px; height: 60px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sideh.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sidel{
+        width: 36px; height: 60px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sidel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_blank{
+        align-content: center;
+        width: 164px; height: 84px;
+        padding-left: 160px;
+        /* border: 0.1px solid red; */
+    }
+    .day_text{
+        width: 36px; height: 24px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        text-align: center;
+        /* border: 0.1px solid red; */
+    }
+    .day_text1{
+        width: 36px; height: 24px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        /* border: 0.1px solid red; */
+    }
+    .day_route{
+        width: 36px; height: 24px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경route.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+@media all and (min-width:768px) {
+    .left-map{
+        position: fixed;
+        overflow: hidden;
+        white-space: nowrap;
+        top: 11%;
+        width: 400px; height:1000px;
+        /* border: 1px solid blue; */
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
+    }
+    .right_blank{
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: 70px;
+        /* border: 1px solid red; */
+    }
+    .right1 img{
+        width: 80px; height: 80px;
+    }
+    .bottom{
+        justify-content: center;
+        display: flex;
+        height: 3%;
+        width: auto;
+        /* border: 1px solid red; */
+    }
+    .day_trip img{
+        width: 60px;
+    }
+    .day_trans img{
+        height: 50px;
+    }
+    .day{
+        margin-top: 60px;
+        display: inline-flex; flex-wrap: wrap;
+        width: 360px; height: 210px;
+        /* border: 2px solid rgb(243, 71, 100); */
+    }
+    .day_container{
+        width: 36px; height: 60px;
+    }
+    .day_container1{
+        width: 36px; height: 60px;
+    }
+    .day_container_blank{
+        width: 36px; height: 84px;
+    }
+    .day_lodge{
+        width: 36px; height: 36px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trip{
+        width: 36px; height: 36px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trans{
+        width: 36px; height: 36px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sideh{
+        width: 36px; height: 60px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sideh.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sidel{
+        width: 36px; height: 60px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sidel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_blank{
+        align-content: center;
+        width: 164px; height: 84px;
+        padding-left: 160px;
+        /* border: 0.1px solid red; */
+    }
+    .day_text{
+        width: 36px; height: 24px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        text-align: center;
+        /* border: 0.1px solid red; */
+    }
+    .day_text1{
+        width: 36px; height: 24px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        /* border: 0.1px solid red; */
+    }
+    .day_route{
+        width: 36px; height: 24px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경route.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 @media all and (min-width:1280px){
     .left-map{
@@ -205,7 +420,12 @@ body{
         white-space: nowrap;
         top: 15%;
         width: 600px; height:440px;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
     }
     .right_blank{
         justify-content: center;
@@ -216,6 +436,87 @@ body{
     .right1 img{
         width: 120px; height: 120px;
     }
+    .day_trip img{
+        width: 60px;
+    }
+    .day_trans img{
+        height: 50px;
+    }
+    .day{
+        margin-top: 50px;
+        display: inline-flex; flex-wrap: wrap;
+        width: 600px; height: 350px;
+        /* border: 2px solid rgb(243, 71, 100); */
+    }
+    .day_container{
+        width: 60px; height: 100px;
+    }
+    .day_container1{
+        width: 60px; height: 100px;
+    }
+    .day_container_blank{
+        width: 60px; height: 140px;
+    }
+    .day_lodge{
+        width: 60px; height: 60px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trip{
+        width: 60px; height: 60px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trans{
+        width: 60px; height: 60px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sideh{
+        width: 60px; height: 100px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sideh.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sidel{
+        width: 60px; height: 100px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sidel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_blank{
+        align-content: center;
+        width: 340px; height: 140px;
+        padding-left: 200px;
+        /* border: 0.1px solid red; */
+    }
+    .day_text{
+        width: 60px; height: 40px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        text-align: center;
+        /* border: 0.1px solid red; */
+    }
+    .day_text1{
+        width: 60px; height: 40px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        /* border: 0.1px solid red; */
+    }
+    .day_route{
+        width: 60px; height: 40px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경route.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
 }
 @media all and (min-width:1360px){
     .left-map{
@@ -239,6 +540,12 @@ body{
     .right1 img{
         width: 120px; height: 120px;
     }
+    .day_trip img{
+        width: 64px;
+    }
+    .day_trans img{
+        height: 50px;
+    }
     .day{
         margin-top: 30px;
         display: inline-flex; flex-wrap: wrap;
@@ -246,6 +553,9 @@ body{
         /* border: 2px solid rgb(243, 71, 100); */
     }
     .day_container{
+        width: 64.5px; height: 107.5px;
+    }
+    .day_container1{
         width: 64.5px; height: 107.5px;
     }
     .day_container_blank{
@@ -266,10 +576,6 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }
-    .day_food{
-        width: 64.5px; height: 64.5px;
-        /* border: 0.1px solid red; */
     }
     .day_trans_sideh{
         width: 64.5px; height: 107.5px;
@@ -297,6 +603,13 @@ body{
         width: 64.5px; height: 42px;
         padding-top: 1px;
         white-space: pre-wrap;
+        text-align: center;
+        /* border: 0.1px solid red; */
+    }
+    .day_text1{
+        width: 64.5px; height: 42px;
+        padding-top: 1px;
+        white-space: pre-wrap;
         /* border: 0.1px solid red; */
     }
     .day_route{
@@ -317,7 +630,12 @@ body{
         white-space: nowrap;
         top: 16%;
         width: 920px; height:710px;
-        border: 1px solid blue;
+        /* border: 1px solid blue; */
+    }
+    .day_change {
+        margin : 0 auto;
+        overflow : hidden;
+        white-space : nowrap; /* 줄바꿈 금지(이미지를 한줄로) */
     }
     .right_blank{
         justify-content: center;
@@ -328,6 +646,86 @@ body{
     }
     .right1 img{
         width: 120px; height: 120px;
+    }
+    .day_trip img{
+        width: 90px;
+    }
+    .day_trans img{
+        height: 50px;
+    }
+    .day{
+        margin-top: 100px; margin-left: 10px;
+        display: inline-flex; flex-wrap: wrap;
+        width: 900px; height: 510px;
+        /* border: 2px solid rgb(243, 71, 100); */
+    }
+    .day_container{
+        width: 90px; height: 150px;
+    }
+    .day_container1{
+        width: 90px; height: 150px;
+    }
+    .day_container_blank{
+        width: 90px; height: 210px;
+    }
+    .day_lodge{
+        width: 90px; height: 90px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trip{
+        width: 90px; height: 90px;
+        /* border: 0.1px solid red; */
+    }
+    .day_trans{
+        width: 90px; height: 90px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sideh{
+        width: 90px; height: 150px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sideh.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_trans_sidel{
+        width: 90px; height: 150px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경sidel.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .day_blank{
+        align-content: center;
+        width: 410px; height: 210px;
+        padding-left: 400px;
+        /* border: 0.1px solid red; */
+    }
+    .day_text{
+        width: 90px; height: 60px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        text-align: center;
+        /* border: 0.1px solid red; */
+    }
+    .day_text1{
+        width: 90px; height: 60px;
+        padding-top: 1px;
+        white-space: pre-wrap;
+        /* border: 0.1px solid red; */
+    }
+    .day_route{
+        width: 90px; height: 60px;
+        /* border: 0.1px solid red; */
+        background-image: url(img/배경route.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
