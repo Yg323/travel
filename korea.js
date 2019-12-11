@@ -13,6 +13,8 @@ $(document).ready(function () {
 			},
 			distance: 10
 		});
+		$(".travel_if").attr('src','https://map.kakao.com/link/search/'+$(".select_travel option:selected").val());
+		$(".travel_im").attr('src','img/'+$(".select_travel option:selected").val()+'.png');
 		$(".day_container1").droppable({
 			accept: ".puzzle_travel",
 			classes : {
@@ -25,6 +27,8 @@ $(document).ready(function () {
 				$('.day_text1',this).text($(".select_travel option:selected").val());
 			}
 		});
+
+		
 	});
 	// 초기 값 지정
 	$('.puzzle_food').text("추천 코스를 편집해주세요!");
@@ -39,6 +43,8 @@ $(document).ready(function () {
 			},
 			distance: 10
 		});
+		$(".food_if").attr('src','https://map.kakao.com/link/search/'+$(".select_travel option:selected").val());
+		$(".food_im").attr('src','img/'+$(".select_travel option:selected").val()+'.png');
 		$(".day_container1").droppable({
 			accept: ".puzzle_food",
 			classes : {
@@ -64,6 +70,7 @@ $(document).ready(function () {
 			},
 			distance: 10
 		});
+		$(".map_if").attr('src','https://map.kakao.com/link/search/'+$(".select_travel option:selected").val());
 		$(".day_container1").droppable({
 			accept: ".puzzle_map",
 			classes : {
@@ -80,7 +87,7 @@ $(document).ready(function () {
 });
 // 화면 전환
 function j_test(n){
-	$('.day_change').scrollLeft( $('.day_change').scrollLeft() + n );
+	$('.day_change').scrollLeft( $('.day_change').scrollLeft() + (n *$(".day").width()));
 }
 //드래그앤 드롭
 $( function() {

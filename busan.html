@@ -29,7 +29,7 @@
                 <div class="day_trans_sideh"></div>
                 <div class="day_blank">
                         <img src="img/1일차.png" width="100px">
-                        <button type="button" onclick="j_test(658)">2일차</button><br>
+                        <button type="button" onclick="j_test(1)">2일차</button><br>
                 </div>
                 <div class="day_container_blank"><div class="day_container1"><div class="day_trip"><img src="img/음식 아이콘.png" width="64px"></div><div class="day_text1"></div></div><div class="day_route"></div></div>
                 <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
@@ -55,9 +55,9 @@
                 <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
                 <div class="day_trans_sideh"></div>
                 <div class="day_blank">
-                        <button type="button" onclick="j_test(-659)">1일차</button>
+                        <button type="button" onclick="j_test(-1)">1일차</button>
                         <img src="img/2일차.png" width="100px">
-                        <button type="button" onclick="j_test(658)">3일차</button><br>
+                        <button type="button" onclick="j_test(1)">3일차</button><br>
                 </div>
                 <div class="day_container_blank">
                     <div class="day_container1"><div class="day_trip"><img src="img/음식 아이콘.png"></div><div class="day_text1"></div></div>
@@ -86,7 +86,7 @@
                 <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
                 <div class="day_trans_sideh"></div>
                 <div class="day_blank">
-                        <button type="button" onclick="j_test(-659)">2일차</button>
+                        <button type="button" onclick="j_test(-1)">2일차</button>
                         <img src="img/3일차.png" width="100px">
                 </div>
                 <div class="day_container_blank"><div class="day_container1"><div class="day_trip"><img src="img/음식 아이콘.png"></div><div class="day_text1"></div></div><div class="day_route"></div></div>
@@ -128,7 +128,8 @@
             <div class="puzzle_travel"></div>
         </div>
         <div class="right3">
-            COMMENT
+            <iframe src="https://map.kakao.com/link/search/" class="travel_if"></iframe>
+            <img src="" class="travel_im">
         </div>
         <!-- 식사 -->
         <div class="right_blank">
@@ -153,7 +154,10 @@
             </select>
         <div class="puzzle_food"></div>
         </div>
-        <div class="right3">COMMENT</div>
+        <div class="right3">
+            <iframe src="https://map.kakao.com/link/search/" class="food_if"></iframe>
+            <img src="" class="food_im">
+        </div>
         <!-- 교통편 -->
         <div class="right_blank">
             <a id="traffic"></a>
@@ -170,7 +174,9 @@
             <div class="select_trans_c"><img src="img/차 아이콘.png" height="50"></div>
             <div class="select_trans_t"><img src="img/기차 아이콘.png" height="50"></div>
         </div>
-        <div class="right3">COMMENT</div>
+        <div class="right3">
+                <iframe src="https://map.kakao.com" width="100%"></iframe>
+        </div>
         <!-- 숙박 -->
         <div class="right_blank">
             <a id="map"></a>
@@ -190,8 +196,8 @@
             </select>
             <div class="puzzle_map"></div>
         </div>
-        <div class="right3"> COMMENT
-            <!-- <div id="map" style="width:50%;height:30%;"></div> -->
+        <div class="right3">
+            <iframe src="https://map.kakao.com/link/search/" class="map_if"></iframe>
         </div>
     </div>
     <div class="bottom">
