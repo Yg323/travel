@@ -52,4 +52,9 @@ $(function(){
 $(function(){
     $('.date_choice').text($(".traveldate option:selected").val());
 })
-
+$(document).ready(function () {
+    $('#traveldate').change(function(){
+        var a = $("#traveldate option:selected").val();
+        $('.search_day').attr('href','gyeongnam'+a+'.html');
+    });
+});
