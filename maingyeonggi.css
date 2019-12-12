@@ -208,7 +208,7 @@ input[type=text]:focus{
 }
 @media all and (min-width:1360px){
     .right1 p#title{
-       font-size: 30px;
+       font-size: 29px;
        text-align: center;
    }
    .rightc{

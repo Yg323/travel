@@ -66,16 +66,228 @@ body {
     left: 20%;
     border: 1px solid white;
 }
+/* 서울 */
+.mapbox .box1{
+    display: inline-flex;
+    width: 3%;
+    height: 5%;
+    top: 16%;
+    left: 35%;
+    position: fixed;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+/* 경기도 */
+.mapbox .box2{
+    display: inline-flex;
+    width: 8%;
+    height: 9%;
+    top: 22%;
+    left: 34%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 인천 */
+.mapbox .box3{
+    display: inline-flex;
+    width: 3%;
+    height: 10%;
+    top: 13%;
+    left: 30.5%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 강원도 */
+.mapbox .box4{
+    display: inline-flex;
+    width: 8%;
+    height: 20%;
+    top: 6%;
+    left: 43%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 충북 */
+.mapbox .box5{
+    display: inline-flex;
+    width: 4%;
+    height: 15%;
+    top: 32%;
+    left: 40%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 충남 */
+.mapbox .box6{
+    display: inline-flex;
+    width: 6%;
+    height: 16%;
+    top: 32%;
+    left: 32%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 경북 */
+.mapbox .box7{
+    display: inline-flex;
+    width: 10%;
+    height: 17%;
+    top: 32%;
+    left: 45%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 대구 */
+.mapbox .box8{
+    display: inline-flex;
+    width: 3%;
+    height: 7%;
+    top: 50%;
+    left: 47%;
+    position: fixed;
+    border: 1px solid black;
+}
+
+/* 경남 */
+.mapbox .box9{
+    display: inline-flex;
+    width: 8%;
+    height: 17%;
+    top: 58%;
+    left: 42%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 부산 */
+.mapbox .box10{
+    display: inline-flex;
+    width: 4%;
+    height: 7%;
+    top: 63%;
+    left: 50.5%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 전북 */
+.mapbox .box11{
+    display: inline-flex;
+    width: 8%;
+    height: 11%;
+    top: 50%;
+    left: 33%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 전남 */
+.mapbox .box12{
+    display: inline-flex;
+    width: 11%;
+    height: 16%;
+    top: 67%;
+    left: 30%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 울산 */
+.mapbox .box13{
+    display: inline-flex;
+    width: 4%;
+    height: 6.5%;
+    top: 55.5%;
+    left: 52.5%;
+    position: fixed;
+    border: 1px solid black;
+}
+/* 제주도 */
+.mapbox .box14{
+    display: inline-flex;
+    width: 6%;
+    height: 8%;
+    top: 90%;
+    left: 30%;
+    position: fixed;
+    border: 1px solid black;
+}
+
 .right {
-    
-    display: flex;
-    
     width: 33%;
     height: 100%;
     position: fixed;
     left: 65%;
     flex-wrap: wrap;
     border: 1px solid white;
+}
+/* 1번아이콘 전환 */
+.righticon1{
+    position: absolute;
+    top:3%;
+    left: 35%;
+}
+.righticon1-1{
+    position: absolute;
+    top:3%;
+    left: 35%;
+}
+.righticon1 > #textimg1{
+    opacity: 0;
+    transition: opacity 0.5s
+}
+.righticon1:hover > #textimg1{
+    opacity: 1;
+}
+/* 2번아이콘 전환 */
+.righticon2{
+    position: absolute;
+    top:27%;
+    left: 35%;
+}
+.righticon2-1{
+    position: absolute;
+    top:27%;
+    left: 35%;
+}
+.righticon1 > #textimg2{
+    opacity: 0;
+    transition: opacity 0.5s
+}
+.righticon1:hover > #textimg2{
+    opacity: 1;
+}
+/* 3번아이콘 전환 */
+.righticon3{
+    position: absolute;
+    top:51%;
+    left: 35%;
+}
+.righticon3-1{
+    position: absolute;
+    top:51%;
+    left: 35%;
+}
+.righticon1 > #textimg3{
+    opacity: 0;
+    transition: opacity 0.5s
+}
+.righticon1:hover > #textimg3{
+    opacity: 1;
+}
+/* 4번아이콘 전환 */
+.righticon4{
+    position: absolute;
+    top:75%;
+    left: 35%;
+}
+.righticon4-1{
+    position: absolute;
+    top:75%;
+    left: 35%;
+}
+.righticon1 > #textimg4{
+    opacity: 0;
+    transition: opacity 0.5s
+}
+.righticon1:hover > #textimg4{
+    opacity: 1;
 }
 
 

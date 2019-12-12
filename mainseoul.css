@@ -114,6 +114,12 @@ input[type=text]:focus{
 .rightc #from, #to{
     display: inline-block;
 }
+.rightc #splace{
+    cursor: text;
+}
+.rightc #stime, #etime{
+    cursor: pointer;
+}
 
 @media all and (max-width:768px) {
     
@@ -131,7 +137,7 @@ input[type=text]:focus{
 @media all and (min-width:768px) {
     
     .right1 p#title{
-       font-size: 20px;
+       font-size: 22px;
        text-align: center;
    }
    .rightc{
@@ -170,7 +176,7 @@ input[type=text]:focus{
 }
 @media all and (min-width:1280px){
     .right1 p#title{
-        font-size: 25px;
+        font-size: 27px;
         text-align: center;
     }
     .rightc{
