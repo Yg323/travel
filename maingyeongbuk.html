@@ -23,6 +23,9 @@
     </div>
     <div class="mid">
         <img src="img/경북 선택.png" width="90%">
+        <div class="mapbox">
+            <div class="box7" onclick="location.href='mainicon.html';"></div>
+        </div>
     </div>
     <div class="right">
         <div class="right1">
@@ -36,8 +39,13 @@
             <span id="to"> </span>
             <br>
             <p id="date">출발일 <input type="text" id="from_date" disabled > 
-                도착일 <input type="text" id="to_date" disabled ></p><br><br>
-            
+                도착일 <input type="text" id="to_date" disabled ></p>
+            <label for="traveldate">여행기간</label>
+                <select id="traveldate" name="traveldate">
+                    <option value="">당일치기</option>
+                    <option value="">1박2일</option>
+                    <option value="">2박3일</option>
+                </select><br><br>
             <label for="fromtime">출발시간</label>
             <input type="text" id="stime" name="fromtime" value="" placeholder="시간선택">
             <label for="totime">도착시간</label>

@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0px;
     padding: 0px;
 }
@@ -71,13 +71,13 @@ body {
     left: 20%;
     border: 1px solid white;
 }
-/* 충남 */
-.mapbox .box6{
+/* 제주도 */
+.mapbox .box14{
     display: inline-flex;
     width: 6%;
-    height: 16%;
-    top: 32%;
-    left: 32%;
+    height: 8%;
+    top: 90%;
+    left: 30%;
     position: fixed;
     cursor: pointer;
     /* border: 1px solid black; */

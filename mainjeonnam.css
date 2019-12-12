@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0px;
     padding: 0px;
 }
@@ -71,13 +71,13 @@ body {
     left: 20%;
     border: 1px solid white;
 }
-/* 충남 */
-.mapbox .box6{
+/* 전남 */
+.mapbox .box12{
     display: inline-flex;
-    width: 6%;
+    width: 11%;
     height: 16%;
-    top: 32%;
-    left: 32%;
+    top: 67%;
+    left: 30%;
     position: fixed;
     cursor: pointer;
     /* border: 1px solid black; */
@@ -195,7 +195,7 @@ input[type=text]:focus{
    .rightc #from, #to{
     display: inline-block;  
        font-size: 11px;
-   }
+   }   
    .rightc #traveldate{
         width:35%;
         height: 21px;
