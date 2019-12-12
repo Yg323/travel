@@ -1,4 +1,4 @@
-* {
+* { 
     margin: 0px;
     padding: 0px;
 }
@@ -71,13 +71,13 @@ body {
     left: 20%;
     border: 1px solid white;
 }
-/* 충남 */
-.mapbox .box6{
+/* 울산 */
+.mapbox .box13{
     display: inline-flex;
-    width: 6%;
-    height: 16%;
-    top: 32%;
-    left: 32%;
+    width: 4%;
+    height: 6.5%;
+    top: 55.5%;
+    left: 52.5%;
     position: fixed;
     cursor: pointer;
     /* border: 1px solid black; */
@@ -154,9 +154,9 @@ input[type=text]:focus{
        
    }
    .rightc #traveldate{
-        width:32%;
-        height: 21px;
-        margin: 2px 5px 2px 2px;
+    width:32%;
+    height: 21px;
+    margin: 2px 5px 2px 2px;
     }
    .rightc #from_date, #to_date{
         width:28%;
@@ -196,16 +196,16 @@ input[type=text]:focus{
     display: inline-block;  
        font-size: 11px;
    }
-   .rightc #traveldate{
-        width:35%;
-        height: 21px;
-        margin: 3px 8px 3px 3px;
-    }
    .rightc #from_date, #to_date{
         width:33%;
         height: 21px;
         margin: 3px 3px;
         text-align: center;
+    }
+    .rightc #traveldate{
+        width:35%;
+        height: 21px;
+        margin: 3px 8px 3px 3px;
     }
     .rightc #etime, #stime{
         width:23%;
@@ -240,9 +240,9 @@ input[type=text]:focus{
        font-size: 11px;
    }
    .rightc #traveldate{
-        width:36%;
-        height: 27px;
-        margin: 3px 8px 3px 3px;
+    width:36%;
+    height: 27px;
+    margin: 3px 8px 3px 3px;
     }
    .rightc #from_date, #to_date{
         width:35%;

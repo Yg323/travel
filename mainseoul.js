@@ -21,8 +21,22 @@ $(function(){
     });
     
     $("#today").text(new Date().toLocaleDateString()); //오늘 날짜 출력
+    
+    $('#from').datepicker({
+        onSelect: function(dateText) {
+         $('#from_date').datepicker("setDate", $(this).datepicker("getDate"));//출발일출력
+       }
+    });
+    $("#from_date").datepicker();
 
-    $('#stime')
+    $('#to').datepicker({
+        onSelect: function(dateText) {
+         $('#to_date').datepicker("setDate", $(this).datepicker("getDate"));//도착일출력
+       }
+     });
+    $("#to_date").datepicker();
+
+    $('#stime') //시간선택
         .timepicker({timeFormat:'H:i','minTime':'06:00','maxTime':'23:00','scrollDefaultNow': true }) //stime 시작 기본 설정
         .on('changeTime',function() { //stime 을 선택한 후 동작
             var from_time = $("input[name='stime']").val(); //stime 값을 변수에 저장
@@ -32,30 +46,7 @@ $(function(){
     //etime을 먼저 선택한 경우 그리고 etime시간이 stime시간보다 작은경우 etime시간 변경
             }  
         });
- 
     $('#etime').timepicker({timeFormat:'H:i','minTime':'06:00','maxTime':'23:00'});//etime 시간 기본 설정
  
 });
 
-//출발
-$(function() {
-    $('#from').datepicker({
-      onSelect: function(dateText) {
-   $('#from_date').datepicker("setDate", $(this).datepicker("getDate"));
-      }
-    });
-});  
-$(function() {
-    $("#from_date").datepicker();
-});
-//도착
-$(function() {
-    $('#to').datepicker({
-      onSelect: function(dateText) {
-   $('#to_date').datepicker("setDate", $(this).datepicker("getDate"));
-      }
-    });
-});  
-$(function() {
-    $("#to_date").datepicker();
-});

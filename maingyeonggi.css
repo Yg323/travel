@@ -71,6 +71,17 @@ body {
     left: 20%;
     border: 1px solid white;
 }
+/* 경기도 */
+.mapbox .box2{
+    display: inline-flex;
+    width: 8%;
+    height: 9%;
+    top: 22%;
+    left: 34%;
+    position: fixed;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
 .right {
     justify-content: center;
     display: inline-flex;
@@ -142,6 +153,11 @@ input[type=text]:focus{
        font-size: 4px;
        
    }
+   .rightc #traveldate{
+        width:32%;
+        height: 21px;
+        margin: 2px 5px 2px 2px;
+    }
    .rightc #from_date, #to_date{
         width:28%;
         height: 21px;
@@ -180,6 +196,11 @@ input[type=text]:focus{
     display: inline-block;  
        font-size: 11px;
    }
+   .rightc #traveldate{
+        width:35%;
+        height: 21px;
+        margin: 3px 8px 3px 3px;
+    }
    .rightc #from_date, #to_date{
         width:33%;
         height: 21px;
@@ -218,6 +239,11 @@ input[type=text]:focus{
     display: inline-block;
        font-size: 11px;
    }
+   .rightc #traveldate{
+        width:36%;
+        height: 27px;
+        margin: 3px 8px 3px 3px;
+    }
    .rightc #from_date, #to_date{
         width:35%;
         height: 25px;
@@ -260,6 +286,11 @@ input[type=text]:focus{
     display: inline-block;
        font-size: 16px;
    }
+   .rightc #traveldate{
+        width:30%;
+        height: 30px;
+        margin: 5px 10px 5px 5px;
+    }
    .rightc #from_date, #to_date{
        width:37%;
        height: 30px;

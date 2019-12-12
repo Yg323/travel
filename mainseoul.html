@@ -21,26 +21,35 @@
     </div>
     <div class="mid">
         <img src="img/서울 선택.png" width="90%">
+        <div class="mapbox">
+            <div class="box1" onclick="location.href='mainicon.html';"></div>
+        </div>
     </div>
     <div class="right">
         <div class="right1">
             <p id="title">"서울"로 떠나볼까요?</p>
         </div>
         <div class="rightc">
-            <form action="#">
+            <form action="#" method="">
               오늘 날짜 : <span id="today"></span><br>
             <br>
             <span id="from"> </span>
             <span id="to"> </span>
             <br>
             <p id="date">출발일 <input type="text" id="from_date" disabled > 
-                도착일 <input type="text" id="to_date" disabled ></p><br><br>
-            
+                도착일 <input type="text" id="to_date" disabled ></p> 
+            <label for="traveldate">여행기간</label>
+                <select id="traveldate" name="traveldate">
+                    <option value="">당일치기</option>
+                    <option value="">1박2일</option>
+                    <option value="">2박3일</option>
+                </select><br><br>
             <label for="fromtime">출발시간</label>
             <input type="text" id="stime" name="fromtime" value="" placeholder="시간선택">
             <label for="totime">도착시간</label>
             <input type="text" id="etime" name="totime" value="" placeholder="시간선택" >
             
+
             <div class="ui-timepicker-wrapper" tabindex="-1" style="position: absolute; top: 29px; left: 8px; display: none;">
                 <ul class="ui-timepicker-list">
                     <li class="ui-timepicker-am">06:00</li>
@@ -148,7 +157,7 @@
                     <option value="3명">3</option>
                     <option value="4명">4</option>
                 </select><br><br><br>
-            <input type="button" class="search" value="검색"> <input type="reset" value="초기화">
+            <input type="submit" class="search" value="검색"> <input type="reset" value="초기화">
             </form>
         </div>
         
