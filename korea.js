@@ -43,7 +43,7 @@ $(document).ready(function () {
 			},
 			distance: 10
 		});
-		$(".food_if").attr('src','https://map.kakao.com/link/search/'+$(".select_travel option:selected").val());
+		$(".food_if").attr('src','https://map.kakao.com/link/search/'+$(".select_food option:selected").val());
 		$(".food_im").attr('src','img/'+$(".select_travel option:selected").val()+'.png');
 		$(".day_container1").droppable({
 			accept: ".puzzle_food",
@@ -70,7 +70,7 @@ $(document).ready(function () {
 			},
 			distance: 10
 		});
-		$(".map_if").attr('src','https://map.kakao.com/link/search/'+$(".select_travel option:selected").val());
+		$(".map_if").attr('src','https://map.kakao.com/link/search/'+$(".select_map option:selected").val());
 		$(".day_container1").droppable({
 			accept: ".puzzle_map",
 			classes : {
