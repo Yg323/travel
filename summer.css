@@ -54,7 +54,7 @@ body {
     height: 100%;
     position: fixed;
     left: 0;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .mid {
@@ -64,7 +64,7 @@ body {
     height: 100%;
     position: fixed;
     left: 20%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .right {
     justify-content: center;
@@ -74,7 +74,7 @@ body {
     position: fixed;
     left: 65%;
     flex-wrap: wrap;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .righthomeicon{
     position: absolute;
