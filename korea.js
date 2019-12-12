@@ -114,8 +114,9 @@ $( function() {
 		}
 	});
 });
+
 $( function() {
-	$( ".select_trans_b img" ).draggable({
+	$( ".select_trans_w img,.select_trans_b img, .select_trans_c img, .select_trans_t img" ).draggable({
 		helper:"clone",
 		cursor:"move",
 		start: function(event,ui){
@@ -124,66 +125,27 @@ $( function() {
 		distance: 10
 	});
 	$(".day_container").droppable({
-		accept: ".select_trans_b img",
+		accept: ".select_trans_w img,.select_trans_b img, .select_trans_c img, .select_trans_t img",
 		classes : {
 			"ui-droppable-active": "ui-state-active",
 			"ui-droppable-hover": "ui-state-hover"
 		  },
 		drop: function(event,ui){
 			$(".day_text").css("border","0px");
-			$('.day_trans img',this).attr('src','img/버스 아이콘.png');
+			var a = $(ui.draggable).attr("src");
+			$('.day_trans img',this).attr('src', a);
+			if(a=="img/걷는 아이콘.png"){
+				$(".day_trans img",this).css("width","auto");
+				$(".day_trans img",this).css("height","70%");
+				$(".day_trans img",this).css("padding-top","5%");
+			}
+			else{
+				$(".day_trans img",this).css("width","100%");
+				$(".day_trans img",this).css("height","50%");
+				$(".day_trans img",this).css("padding-top","25%");
+			}
 		}
 	});
 });
-$( function() {
-	$( ".select_trans_c img" ).draggable({
-		helper:"clone",
-		cursor:"move",
-		start: function(event,ui){
-			$(".day_text").css("border","dashed 0.1px red");
-		},
-		distance: 10
-	});
-	$(".day_container").droppable({
-		accept: ".select_trans_c img",
-		classes : {
-			"ui-droppable-active": "ui-state-active",
-			"ui-droppable-hover": "ui-state-hover"
-		  },
-		drop: function(event,ui){
-			$(".day_text").css("border","0px");
-			$('.day_trans img',this).attr('src','img/차 아이콘.png');
-			$(".day_trans img",this).css("width","64px");
-			$(".day_trans img",this).css("height","25px");
-			$(".day_trans img",this).css("padding-top","25px");
-		}
-	});
-});
-$( function() {
-	$( ".select_trans_t img" ).draggable({
-		helper:"clone",
-		cursor:"move",
-		start: function(event,ui){
-			$(".day_text").css("border","dashed 0.1px red");
-		},
-		distance: 10
-	});
-	$(".day_container").droppable({
-		accept: ".select_trans_t img",
-		classes : {
-			"ui-droppable-active": "ui-state-active",
-			"ui-droppable-hover": "ui-state-hover"
-		  },
-		drop: function(event,ui){
-			$(".day_text").css("border","0px");
-			$('.day_trans img',this).attr('src','img/기차 아이콘.png');
-			$(".day_trans img",this).css("width","64px");
-			$(".day_trans img",this).css("height","25px");
-			$(".day_trans img",this).css("padding-top","25px");
-		}
-	});
-
-} );
-
 
 
