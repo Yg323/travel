@@ -1,0 +1,148 @@
+<!DOCTYPE html><!--굥-->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="honey.png">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="korea.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="korea.js"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=92f283435fdd4aa3809a7a83baab7bed "></script>
+    <title>충청남도로</title>
+</head>
+<body>
+    <div class="top"><img src="img/충남 제목.png"></div>
+    <div class="left"></div>
+    <div class="left-map">
+        <div class="day_change">
+            <div class="day">
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_trans_sideh"></div>
+                <div class="day_blank">
+                        <img src="img/1일차.png" width="100px">
+                </div>
+                <div class="day_container_blank"><div class="day_container1"><div class="day_trip"><img src="img/음식 아이콘.png" width="64px"></div><div class="day_text1"></div></div><div class="day_route"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_container"><div class="day_trans"><img src="img/걷는 아이콘.png"></div><div class="day_text"></div></div>
+                <div class="day_container1"><div class="day_trip"><img src="img/여행지 아이콘.png"></div><div class="day_text1"></div></div>
+                <div class="day_trans_sidel"></div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+         <!-- 여행지 -->
+        <div class="right_blank">
+            <a id="travel"></a>
+        </div>
+        <div class="right1">
+            <a href="#travel"><img src="img/여행지 아이콘.png"></a>
+            <a href="#food"><img src="img/음식 아이콘.png"></a>
+            <a href="#traffic"><img src="img/교통 아이콘.png"></a>
+            <a href="#map"><img src="img/집주소 아이콘.png"></a>
+        </div>
+        <div class="right2">
+            <select class="select_travel">
+                <option value="" >가고 싶은 여행지를 선택해주세요!</option>
+                <option value="감천문화마을">감천문화마을</option>
+                <option value="광안리 수변공원">광안리 수변공원</option>
+                <option value="국제시장">국제시장</option>
+                <option value="남포동">남포동</option>
+                <option value="더베이 101">더베이 101</option>
+                <option value="동백섬">동백섬</option>
+                <option value="미포철길">미포철길</option>
+            </select>
+            <div class="puzzle_travel"></div>
+        </div>
+        <div class="right3">
+            <iframe src="https://map.kakao.com/link/search/" class="travel_if"></iframe>
+            <img src="" class="travel_im">
+        </div>
+        <!-- 식사 -->
+        <div class="right_blank">
+            <a id="food"></a>
+        </div>
+        <div class="right1">
+            <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"> </a>
+            <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"> </a>
+            <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"> </a>
+            <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"> </a>
+        </div>
+        <div class="right2">
+            <select class="select_food">
+                <option value="" >가고 싶은 음식점을 선택해주세요</option>
+                <option value="버거킹">버거킹</option>
+                <option value="맥도날드">맥도날드</option>
+                <option value="국제시장">국제시장</option>
+                <option value="남포동">남포동</option>
+                <option value="더베이 101">더베이 101</option>
+                <option value="동백섬">동백섬</option>
+                <option value="미포철길">미포철길</option>
+            </select>
+        <div class="puzzle_food"></div>
+        </div>
+        <div class="right3">
+            <iframe src="https://map.kakao.com/link/search/" class="food_if"></iframe>
+            <img src="" class="food_im">
+        </div>
+        <!-- 교통편 -->
+        <div class="right_blank">
+            <a id="traffic"></a>
+        </div>
+        <div class="right1">
+            <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"></a>
+            <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"></a>
+            <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"></a>
+            <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"></a>
+        </div>
+        <div class="right2">
+            <div class="select_trans_w"><img src="img/걷는 아이콘.png" height="50"></div>
+            <div class="select_trans_b"><img src="img/버스 아이콘.png" height="50"></div>
+            <div class="select_trans_c"><img src="img/차 아이콘.png" height="50"></div>
+            <div class="select_trans_t"><img src="img/기차 아이콘.png" height="50"></div>
+        </div>
+        <div class="right3">
+                <iframe src="https://map.kakao.com" width="100%"></iframe>
+        </div>
+        <!-- 숙박 -->
+        <div class="right_blank">
+            <a id="map"></a>
+        </div>
+        <div class="right1">
+            <a href="#travel"><img src="img/여행지 아이콘.png" width="120" height="120"></a>
+            <a href="#food"><img src="img/음식 아이콘.png" width="120" height="120"></a>
+            <a href="#traffic"><img src="img/교통 아이콘.png" width="120" height="120"></a>
+            <a href="#map"><img src="img/집주소 아이콘.png" width="120" height="120"></a>
+        </div>
+        <div class="right2">
+            <select class="select_map">
+                <option value="" >숙박하고 싶은 호텔을 선택해주세요</option>
+                <option value="HTML">HTML</option>
+                <option value="자바스크립트">자바스크립트</option>
+                <option value="CSS">CSS</option>
+            </select>
+            <div class="puzzle_map"></div>
+        </div>
+        <div class="right3">
+            <iframe src="https://map.kakao.com/link/search/" class="map_if"></iframe>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="img/꿀트립small.png" width="100px">
+    </div>
+</body>
+</html>
