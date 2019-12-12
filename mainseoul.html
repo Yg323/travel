@@ -39,11 +39,14 @@
             <p id="date">출발일 <input type="text" id="from_date" disabled > 
                 도착일 <input type="text" id="to_date" disabled ></p> 
             <label for="traveldate">여행기간</label>
-                <select id="traveldate" name="traveldate">
-                    <option value="">당일치기</option>
-                    <option value="">1박2일</option>
-                    <option value="">2박3일</option>
+                <select class="traveldate" name="traveldate">
+                    <option value="">최대 2박3일까지입니다!</option>
+                    <option value="seoul1.html">당일치기</option>
+                    <option value="seoul2.html">1박2일</option>
+                    <option value="seoul3.html">2박3일</option>
                 </select><br><br>
+                <div class="date_choice"></div>
+            
             <label for="fromtime">출발시간</label>
             <input type="text" id="stime" name="fromtime" value="" placeholder="시간선택">
             <label for="totime">도착시간</label>
@@ -157,7 +160,8 @@
                     <option value="3명">3</option>
                     <option value="4명">4</option>
                 </select><br><br><br>
-            <input type="submit" class="search" value="검색"> <input type="reset" value="초기화">
+                <a href="seoul1.html"><img src="img/검색아이콘.png" width="150" height="50"></a>
+
             </form>
         </div>
         

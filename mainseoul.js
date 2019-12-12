@@ -49,4 +49,7 @@ $(function(){
     $('#etime').timepicker({timeFormat:'H:i','minTime':'06:00','maxTime':'23:00'});//etime 시간 기본 설정
  
 });
+$(function(){
+    $('.date_choice').text($(".traveldate option:selected").val());
+})
 
