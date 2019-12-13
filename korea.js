@@ -44,7 +44,7 @@ $(document).ready(function () {
 			distance: 10
 		});
 		$(".food_if").attr('src','https://map.kakao.com/link/search/'+$(".select_food option:selected").val());
-		$(".food_im").attr('src','img/'+$(".select_travel option:selected").val()+'.png');
+		$(".food_im").attr('src','img/'+$(".select_food option:selected").val()+'.png');
 		$(".day_container1").droppable({
 			accept: ".puzzle_food",
 			classes : {
