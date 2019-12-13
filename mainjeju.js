@@ -59,3 +59,9 @@ $(function() {
 $(function() {
     $("#to_date").datepicker();
 });
+$(document).ready(function () {
+    $('#traveldate').change(function(){
+        var a = $("#traveldate option:selected").val();
+        $('.search_day').attr('href','jeju'+a+'.html');
+    });
+});

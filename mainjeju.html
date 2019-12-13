@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="left">
-        <img src="img/꿀트립 왼쪽부분 수정본.png" width="60%">
+        <img src="img/꿀트립 왼쪽부분 수정본.png">
     </div>
     <div class="mid">
         <img src="img/제주도 선택.png" width="90%">
@@ -42,9 +42,10 @@
                 도착일 <input type="text" id="to_date" disabled ></p>
             <label for="traveldate">여행기간</label>
                 <select id="traveldate" name="traveldate">
-                    <option value="">당일치기</option>
-                    <option value="">1박2일</option>
-                    <option value="">2박3일</option>
+                    <option value="">여행기간을 선택해주세요!</option>
+                    <option value="1">당일치기</option>
+                    <option value="2">1박2일</option>
+                    <option value="3">2박3일</option>
                 </select><br><br>
             <label for="fromtime">출발시간</label>
             <input type="text" id="stime" name="fromtime" value="" placeholder="시간선택">
@@ -146,19 +147,19 @@
                 </select>
             <label for="schoolchildren">취학아동</label>
                 <select id="schoolchildren" name="schoolchildren">
+                    <option value="0명">0</option>
                     <option value="1명">1</option>
                     <option value="2명">2</option>
                     <option value="3명">3</option>
-                    <option value="4명">4</option>
                 </select>
             <label for="preschoolchildren">미취학아동</label>
                 <select id="preschoolchildren" name="preschoolchildren">
+                    <option value="0명">0</option>
                     <option value="1명">1</option>
                     <option value="2명">2</option>
                     <option value="3명">3</option>
-                    <option value="4명">4</option>
                 </select><br><br><br>
-            <a href="jeju1.html"><img src="img/검색아이콘.png" width="150" height="50"></a>
+            <a href="jeju1.html" class="search_day"><img src="img/검색아이콘.png" width="150" height="50"></a>
             </form>
         </div>
         
